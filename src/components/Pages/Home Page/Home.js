@@ -1,11 +1,12 @@
 import Navigation from "../../shared/Navigation/Navigation";
 import ShoppingList from "./ShoppingList";
+import Cart from "../Cart/Cart";
 
 const Home = () => {
   return (
     <div>
-      <Navigation />
-      <ShoppingList />
+        <Navigation />
+      <Cart/>
     </div>
   );
 };
