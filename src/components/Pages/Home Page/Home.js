@@ -14,7 +14,6 @@ import Promotion from "../Promotion/Promotion";
 const Home = () => {
     return (
         <div>
-            <Navigation/>
             <ShoppingList/>
         </div>
     );

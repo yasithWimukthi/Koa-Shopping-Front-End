@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 
 const Navigation = () => {
     return(
@@ -12,27 +13,23 @@ const Navigation = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                        <Link to="/">Home</Link>
+                        <a><Link to="/">Home</Link></a>
                     </li>
                     <li className="nav-item">
                         <Link to="/wishlist">Wishlist</Link>
                     </li>
-                    {/*<li className="nav-item">*/}
-                    {/*    <a className="nav-link" href="#">Cart</a>*/}
-                    {/*    <Link to="/about">About</Link>*/}
-                    {/*</li>*/}
-                    {/*<li className="nav-item">*/}
-                    {/*    <a className="nav-link" href="#">Items</a>*/}
-                    {/*    <Link to="/about">About</Link>*/}
-                    {/*</li>*/}
-                    {/*<li className="nav-item">*/}
-                    {/*    <a className="nav-link" href="#">Promotions</a>*/}
-                    {/*    <Link to="/about">About</Link>*/}
-                    {/*</li>*/}
-                    {/*<li className="nav-item">*/}
-                    {/*    <a className="nav-link" href="#">Customers</a>*/}
-                    {/*    <Link to="/about">About</Link>*/}
-                    {/*</li>*/}
+                    <li className="nav-item active">
+                        <a><Link to="/cart">Cart</Link></a>
+                    </li>
+                    <li className="nav-item active">
+                        <a><Link to="/shopping-items">Items</Link></a>
+                    </li>
+                    <li className="nav-item active">
+                        <a><Link to="/promotion">Promotions</Link></a>
+                    </li>
+                    <li className="nav-item active">
+                        <a><Link to="/customers">Customers</Link></a>
+                    </li>
                 </ul>
             </div>
         </nav>
