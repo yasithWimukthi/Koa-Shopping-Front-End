@@ -26,6 +26,9 @@ const Navigation = () => {
                     <li className="nav-item">
                         <a className="nav-link" href="#">Promotions</a>
                     </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Customers</a>
+                    </li>
                 </ul>
             </div>
         </nav>

@@ -25578,23 +25578,25 @@ var _shoppingList = require("./ShoppingList");
 var _shoppingListDefault = parcelHelpers.interopDefault(_shoppingList);
 var _cart = require("../Cart/Cart");
 var _cartDefault = parcelHelpers.interopDefault(_cart);
+var _shoppingItemsPage = require("../ShoppingItems/ShoppingItemsPage");
+var _shoppingItemsPageDefault = parcelHelpers.interopDefault(_shoppingItemsPage);
 const Home = ()=>{
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
         children: [
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_navigationDefault.default, {}, void 0, false, {
                 fileName: "src/components/Pages/Home Page/Home.js",
-                lineNumber: 8,
+                lineNumber: 9,
                 columnNumber: 9
             }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_cartDefault.default, {}, void 0, false, {
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemsPageDefault.default, {}, void 0, false, {
                 fileName: "src/components/Pages/Home Page/Home.js",
-                lineNumber: 9,
+                lineNumber: 10,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Pages/Home Page/Home.js",
-        lineNumber: 7,
+        lineNumber: 8,
         columnNumber: 5
     }, undefined);
 };
@@ -25608,7 +25610,7 @@ $RefreshReg$(_c, "Home");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../../shared/Navigation/Navigation":"gNthl","./ShoppingList":"dDzjB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Cart/Cart":"baRrL"}],"gNthl":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../../shared/Navigation/Navigation":"gNthl","./ShoppingList":"dDzjB","../Cart/Cart":"baRrL","../ShoppingItems/ShoppingItemsPage":"6qrZq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gNthl":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$5800 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -25735,6 +25737,22 @@ const Navigation = ()=>{
                         }, void 0, false, {
                             fileName: "src/components/shared/Navigation/Navigation.js",
                             lineNumber: 26,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
+                            className: "nav-item",
+                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                                className: "nav-link",
+                                href: "#",
+                                children: "Customers"
+                            }, void 0, false, {
+                                fileName: "src/components/shared/Navigation/Navigation.js",
+                                lineNumber: 30,
+                                columnNumber: 25
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/shared/Navigation/Navigation.js",
+                            lineNumber: 29,
                             columnNumber: 21
                         }, undefined)
                     ]
@@ -26045,7 +26063,7 @@ const Cart = ()=>{
                                         className: "cart_buttons",
                                         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
                                             type: "button",
-                                            className: "btn bun-warning",
+                                            className: "btn btn-warning",
                                             children: "Pay Now"
                                         }, void 0, false, {
                                             fileName: "src/components/Pages/Cart/Cart.js",
@@ -26100,7 +26118,7 @@ $RefreshReg$(_c, "Cart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./CartItem":"dOMc6"}],"dOMc6":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./CartItem":"dOMc6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dOMc6":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$befd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -26115,6 +26133,9 @@ const CartItem = ()=>{
         className: "cart_items",
         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("ul", {
             className: "cart_list",
+            style: {
+                listStyle: 'none'
+            },
             children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
                 className: "cart_item clearfix",
                 children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -26280,6 +26301,411 @@ var _c;
 $RefreshReg$(_c, "CartItem");
 
   $parcel$ReactRefreshHelpers$befd.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6qrZq":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a0ef = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a0ef.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const ShoppingItemsPage = ()=>{
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+        className: "container",
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h1", {
+                className: "mx-5 my-3",
+                children: "Shopping Items"
+            }, void 0, false, {
+                fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                lineNumber: 4,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                className: "row",
+                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                    className: "btn btn-primary my-3 ",
+                    style: {
+                        width: '100px'
+                    },
+                    "data-toggle": "modal",
+                    "data-target": "#exampleModal",
+                    children: "Add Item"
+                }, void 0, false, {
+                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                    lineNumber: 6,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                lineNumber: 5,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("table", {
+                className: "table table-hover",
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("thead", {
+                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tr", {
+                            children: [
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
+                                    scope: "col",
+                                    children: "#"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                    lineNumber: 11,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
+                                    scope: "col",
+                                    children: "Name"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                    lineNumber: 12,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
+                                    scope: "col",
+                                    children: "Description"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                    lineNumber: 13,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
+                                    scope: "col",
+                                    children: "Price"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                    lineNumber: 14,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
+                                    scope: "col",
+                                    children: "Quantity"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                    lineNumber: 15,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
+                                    scope: "col",
+                                    children: "Promotion Price"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                    lineNumber: 16,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
+                                    scope: "col",
+                                    children: "Edit"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                    lineNumber: 17,
+                                    columnNumber: 21
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                            lineNumber: 10,
+                            columnNumber: 17
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                        lineNumber: 9,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tbody", {
+                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tr", {
+                            children: [
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
+                                    scope: "row",
+                                    children: "1"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                    lineNumber: 22,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
+                                    children: "Mark"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                    lineNumber: 23,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
+                                    children: "Otto"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                    lineNumber: 24,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
+                                    children: "@mdo"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                    lineNumber: 25,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
+                                    children: "Otto"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                    lineNumber: 26,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
+                                    children: "@mdo"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                    lineNumber: 27,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
+                                    children: [
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                                            className: "btn btn-success",
+                                            children: "Edit"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                            lineNumber: 28,
+                                            columnNumber: 25
+                                        }, undefined),
+                                        " "
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                    lineNumber: 28,
+                                    columnNumber: 21
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                            lineNumber: 21,
+                            columnNumber: 17
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                        lineNumber: 20,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                className: "modal fade",
+                id: "exampleModal",
+                tabIndex: "-1",
+                role: "dialog",
+                "aria-labelledby": "exampleModalLabel",
+                "aria-hidden": "true",
+                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    className: "modal-dialog",
+                    role: "document",
+                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                        className: "modal-content",
+                        children: [
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                className: "modal-header",
+                                children: [
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h5", {
+                                        className: "modal-title",
+                                        id: "exampleModalLabel",
+                                        children: "Add Item"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                        lineNumber: 40,
+                                        columnNumber: 29
+                                    }, undefined),
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                                        type: "button",
+                                        className: "close",
+                                        "data-dismiss": "modal",
+                                        "aria-label": "Close",
+                                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                                            "aria-hidden": "true",
+                                            children: "\xd7"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                            lineNumber: 42,
+                                            columnNumber: 33
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                        lineNumber: 41,
+                                        columnNumber: 29
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                lineNumber: 39,
+                                columnNumber: 25
+                            }, undefined),
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                className: "modal-body",
+                                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("form", {
+                                    children: [
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                            className: "form-group",
+                                            children: [
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
+                                                    htmlFor: "name",
+                                                    children: "Item Name"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 48,
+                                                    columnNumber: 37
+                                                }, undefined),
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                                                    type: "text",
+                                                    className: "form-control",
+                                                    id: "name",
+                                                    name: "name",
+                                                    "aria-describedby": "emailHelp",
+                                                    placeholder: "Enter Item Name"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 49,
+                                                    columnNumber: 37
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                            lineNumber: 47,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                            className: "form-group",
+                                            children: [
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
+                                                    htmlFor: "quantity",
+                                                    children: "Quantity"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 53,
+                                                    columnNumber: 37
+                                                }, undefined),
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                                                    type: "number",
+                                                    className: "form-control",
+                                                    id: "quantity",
+                                                    placeholder: "Quantity",
+                                                    name: "quantity"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 54,
+                                                    columnNumber: 37
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                            lineNumber: 52,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                            className: "form-group",
+                                            children: [
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
+                                                    htmlFor: "description",
+                                                    children: "dDescription"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 58,
+                                                    columnNumber: 37
+                                                }, undefined),
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("textarea", {
+                                                    type: "number",
+                                                    className: "form-control",
+                                                    id: "description",
+                                                    placeholder: "Description",
+                                                    name: "description"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 59,
+                                                    columnNumber: 37
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                            lineNumber: 57,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                            className: "modal-footer",
+                                            children: [
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                                                    type: "button",
+                                                    className: "btn btn-secondary",
+                                                    "data-dismiss": "modal",
+                                                    children: "Close"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 63,
+                                                    columnNumber: 37
+                                                }, undefined),
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                                                    type: "submit",
+                                                    className: "btn btn-primary",
+                                                    children: "Add Item"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 64,
+                                                    columnNumber: 37
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                            lineNumber: 62,
+                                            columnNumber: 33
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                    lineNumber: 46,
+                                    columnNumber: 29
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                lineNumber: 45,
+                                columnNumber: 25
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                        lineNumber: 38,
+                        columnNumber: 21
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                    lineNumber: 37,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                lineNumber: 35,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+        lineNumber: 3,
+        columnNumber: 9
+    }, undefined);
+};
+_c = ShoppingItemsPage;
+exports.default = ShoppingItemsPage;
+var _c;
+$RefreshReg$(_c, "ShoppingItemsPage");
+
+  $parcel$ReactRefreshHelpers$a0ef.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
