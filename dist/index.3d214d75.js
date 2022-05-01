@@ -25087,16 +25087,18 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _register = require("./src/components/Register/Register");
 var _registerDefault = parcelHelpers.interopDefault(_register);
+var _home = require("./src/components/Pages/Home Page/Home");
+var _homeDefault = parcelHelpers.interopDefault(_home);
 const App = ()=>{
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_registerDefault.default, {}, void 0, false, {
+        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_homeDefault.default, {}, void 0, false, {
             fileName: "app.js",
-            lineNumber: 7,
+            lineNumber: 8,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "app.js",
-        lineNumber: 6,
+        lineNumber: 7,
         columnNumber: 5
     }, undefined);
 };
@@ -25110,7 +25112,307 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./src/components/Register/Register":"w91Xh"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./src/components/Register/Register":"w91Xh","./src/components/Pages/Home Page/Home":"7fnRJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"w91Xh":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a6f2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a6f2.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Register = ()=>{
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+        className: "container",
+        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+            className: "container h-100",
+            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                className: "row d-flex justify-content-center align-items-center h-100",
+                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    className: "col-md-12",
+                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                        className: "text-black",
+                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                            className: " p-md-5",
+                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                className: "row justify-content-center",
+                                children: [
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                        className: "col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1",
+                                        children: [
+                                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                                                className: "text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4",
+                                                children: "Register"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Register/Register.js",
+                                                lineNumber: 11,
+                                                columnNumber: 45
+                                            }, undefined),
+                                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("form", {
+                                                className: "mx-1 mx-md-4",
+                                                children: [
+                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                                        className: "d-flex flex-row align-items-center mb-4",
+                                                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                                            className: "form-outline flex-fill mb-0",
+                                                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                                                                type: "text",
+                                                                id: "name",
+                                                                className: "form-control",
+                                                                placeholder: "Name",
+                                                                name: "name"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Register/Register.js",
+                                                                lineNumber: 17,
+                                                                columnNumber: 57
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Register/Register.js",
+                                                            lineNumber: 16,
+                                                            columnNumber: 53
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Register/Register.js",
+                                                        lineNumber: 15,
+                                                        columnNumber: 49
+                                                    }, undefined),
+                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                                        className: "d-flex flex-row align-items-center mb-4",
+                                                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                                            className: "form-outline flex-fill mb-0",
+                                                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                                                                type: "email",
+                                                                id: "email",
+                                                                className: "form-control",
+                                                                placeholder: "Email",
+                                                                name: "email"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Register/Register.js",
+                                                                lineNumber: 23,
+                                                                columnNumber: 57
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Register/Register.js",
+                                                            lineNumber: 22,
+                                                            columnNumber: 53
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Register/Register.js",
+                                                        lineNumber: 21,
+                                                        columnNumber: 49
+                                                    }, undefined),
+                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                                        className: "d-flex flex-row align-items-center mb-4",
+                                                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                                            className: "form-outline flex-fill mb-0",
+                                                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                                                                type: "password",
+                                                                id: "password",
+                                                                className: "form-control",
+                                                                placeholder: "Password",
+                                                                name: "password"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Register/Register.js",
+                                                                lineNumber: 29,
+                                                                columnNumber: 57
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Register/Register.js",
+                                                            lineNumber: 28,
+                                                            columnNumber: 53
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Register/Register.js",
+                                                        lineNumber: 27,
+                                                        columnNumber: 49
+                                                    }, undefined),
+                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                                        className: "d-flex flex-row align-items-center mb-4",
+                                                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                                            className: "form-outline flex-fill mb-0",
+                                                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                                                                type: "password",
+                                                                id: "confirmPassword",
+                                                                className: "form-control",
+                                                                placeholder: "Confirm Password",
+                                                                name: "confirmPassword"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Register/Register.js",
+                                                                lineNumber: 35,
+                                                                columnNumber: 57
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Register/Register.js",
+                                                            lineNumber: 34,
+                                                            columnNumber: 53
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Register/Register.js",
+                                                        lineNumber: 33,
+                                                        columnNumber: 49
+                                                    }, undefined),
+                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                                        className: "form-check d-flex justify-content-between align-items-center mb-5",
+                                                        style: {
+                                                            width: '20vw'
+                                                        },
+                                                        children: [
+                                                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                                                className: "form-check",
+                                                                children: [
+                                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                                                                        className: "form-check-input",
+                                                                        type: "radio",
+                                                                        name: "type",
+                                                                        id: "type-radio-1",
+                                                                        checked: true
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Register/Register.js",
+                                                                        lineNumber: 41,
+                                                                        columnNumber: 57
+                                                                    }, undefined),
+                                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
+                                                                        className: "form-check-label",
+                                                                        htmlFor: "type-radio-1",
+                                                                        children: "Customer"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Register/Register.js",
+                                                                        lineNumber: 43,
+                                                                        columnNumber: 61
+                                                                    }, undefined)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/components/Register/Register.js",
+                                                                lineNumber: 40,
+                                                                columnNumber: 53
+                                                            }, undefined),
+                                                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                                                className: "form-check",
+                                                                children: [
+                                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                                                                        className: "form-check-input",
+                                                                        type: "radio",
+                                                                        name: "type",
+                                                                        id: "type-radio-2"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Register/Register.js",
+                                                                        lineNumber: 49,
+                                                                        columnNumber: 57
+                                                                    }, undefined),
+                                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
+                                                                        className: "form-check-label",
+                                                                        htmlFor: "type-radio-2",
+                                                                        children: "Trader"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Register/Register.js",
+                                                                        lineNumber: 51,
+                                                                        columnNumber: 61
+                                                                    }, undefined)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/components/Register/Register.js",
+                                                                lineNumber: 48,
+                                                                columnNumber: 53
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/Register/Register.js",
+                                                        lineNumber: 39,
+                                                        columnNumber: 49
+                                                    }, undefined),
+                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                                        className: "d-flex justify-content-center mx-4 mb-3 mb-lg-4",
+                                                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                                                            type: "button",
+                                                            className: "btn btn-primary btn-lg",
+                                                            children: "Sign Up"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Register/Register.js",
+                                                            lineNumber: 59,
+                                                            columnNumber: 53
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Register/Register.js",
+                                                        lineNumber: 58,
+                                                        columnNumber: 49
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/Register/Register.js",
+                                                lineNumber: 13,
+                                                columnNumber: 45
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Register/Register.js",
+                                        lineNumber: 10,
+                                        columnNumber: 41
+                                    }, undefined),
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                        className: "col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2",
+                                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("img", {
+                                            src: "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp",
+                                            className: "img-fluid",
+                                            alt: "Sample image"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Register/Register.js",
+                                            lineNumber: 66,
+                                            columnNumber: 45
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Register/Register.js",
+                                        lineNumber: 65,
+                                        columnNumber: 41
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Register/Register.js",
+                                lineNumber: 9,
+                                columnNumber: 37
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Register/Register.js",
+                            lineNumber: 8,
+                            columnNumber: 33
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Register/Register.js",
+                        lineNumber: 7,
+                        columnNumber: 29
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Register/Register.js",
+                    lineNumber: 6,
+                    columnNumber: 25
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Register/Register.js",
+                lineNumber: 5,
+                columnNumber: 21
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/components/Register/Register.js",
+            lineNumber: 4,
+            columnNumber: 17
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Register/Register.js",
+        lineNumber: 3,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Register;
+exports.default = Register;
+var _c;
+$RefreshReg$(_c, "Register");
+
+  $parcel$ReactRefreshHelpers$a6f2.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -25260,344 +25562,364 @@ function registerExportsForReactRefresh(module) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}],"w91Xh":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$a6f2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react-refresh/runtime":"786KC"}],"7fnRJ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$6cc3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$a6f2.prelude(module);
+$parcel$ReactRefreshHelpers$6cc3.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Register = ()=>{
+var _navigation = require("../../shared/Navigation/Navigation");
+var _navigationDefault = parcelHelpers.interopDefault(_navigation);
+var _shoppingList = require("./ShoppingList");
+var _shoppingListDefault = parcelHelpers.interopDefault(_shoppingList);
+const Home = ()=>{
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-        className: "container",
-        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-            className: "container h-100",
-            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                className: "row d-flex justify-content-center align-items-center h-100",
-                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                    className: "col-lg-12 col-xl-11",
-                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                        className: "card text-black",
-                        style: "border-radius: 25px;",
-                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                            className: "card-body p-md-5",
-                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                                className: "row justify-content-center",
-                                children: [
-                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                                        className: "col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1",
-                                        children: [
-                                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
-                                                className: "text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4",
-                                                children: "Sign up"
-                                            }, void 0, false, {
-                                                fileName: "src/components/Register/Register.js",
-                                                lineNumber: 12,
-                                                columnNumber: 45
-                                            }, undefined),
-                                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("form", {
-                                                className: "mx-1 mx-md-4",
-                                                children: [
-                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                                                        className: "d-flex flex-row align-items-center mb-4",
-                                                        children: [
-                                                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("i", {
-                                                                className: "fas fa-user fa-lg me-3 fa-fw"
-                                                            }, void 0, false, {
-                                                                fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 17,
-                                                                columnNumber: 53
-                                                            }, undefined),
-                                                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                                                                className: "form-outline flex-fill mb-0",
-                                                                children: [
-                                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
-                                                                        type: "text",
-                                                                        id: "form3Example1c",
-                                                                        className: "form-control"
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/components/Register/Register.js",
-                                                                        lineNumber: 19,
-                                                                        columnNumber: 57
-                                                                    }, undefined),
-                                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
-                                                                        className: "form-label",
-                                                                        htmlFor: "form3Example1c",
-                                                                        children: "Your Name"
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/components/Register/Register.js",
-                                                                        lineNumber: 21,
-                                                                        columnNumber: 57
-                                                                    }, undefined)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 18,
-                                                                columnNumber: 53
-                                                            }, undefined)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/components/Register/Register.js",
-                                                        lineNumber: 16,
-                                                        columnNumber: 49
-                                                    }, undefined),
-                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                                                        className: "d-flex flex-row align-items-center mb-4",
-                                                        children: [
-                                                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("i", {
-                                                                className: "fas fa-envelope fa-lg me-3 fa-fw"
-                                                            }, void 0, false, {
-                                                                fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 27,
-                                                                columnNumber: 53
-                                                            }, undefined),
-                                                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                                                                className: "form-outline flex-fill mb-0",
-                                                                children: [
-                                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
-                                                                        type: "email",
-                                                                        id: "form3Example3c",
-                                                                        className: "form-control"
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/components/Register/Register.js",
-                                                                        lineNumber: 29,
-                                                                        columnNumber: 57
-                                                                    }, undefined),
-                                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
-                                                                        className: "form-label",
-                                                                        htmlFor: "form3Example3c",
-                                                                        children: "Your Email"
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/components/Register/Register.js",
-                                                                        lineNumber: 31,
-                                                                        columnNumber: 57
-                                                                    }, undefined)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 28,
-                                                                columnNumber: 53
-                                                            }, undefined)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/components/Register/Register.js",
-                                                        lineNumber: 26,
-                                                        columnNumber: 49
-                                                    }, undefined),
-                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                                                        className: "d-flex flex-row align-items-center mb-4",
-                                                        children: [
-                                                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("i", {
-                                                                className: "fas fa-lock fa-lg me-3 fa-fw"
-                                                            }, void 0, false, {
-                                                                fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 37,
-                                                                columnNumber: 53
-                                                            }, undefined),
-                                                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                                                                className: "form-outline flex-fill mb-0",
-                                                                children: [
-                                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
-                                                                        type: "password",
-                                                                        id: "form3Example4c",
-                                                                        className: "form-control"
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/components/Register/Register.js",
-                                                                        lineNumber: 39,
-                                                                        columnNumber: 57
-                                                                    }, undefined),
-                                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
-                                                                        className: "form-label",
-                                                                        htmlFor: "form3Example4c",
-                                                                        children: "Password"
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/components/Register/Register.js",
-                                                                        lineNumber: 41,
-                                                                        columnNumber: 57
-                                                                    }, undefined)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 38,
-                                                                columnNumber: 53
-                                                            }, undefined)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/components/Register/Register.js",
-                                                        lineNumber: 36,
-                                                        columnNumber: 49
-                                                    }, undefined),
-                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                                                        className: "d-flex flex-row align-items-center mb-4",
-                                                        children: [
-                                                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("i", {
-                                                                className: "fas fa-key fa-lg me-3 fa-fw"
-                                                            }, void 0, false, {
-                                                                fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 47,
-                                                                columnNumber: 53
-                                                            }, undefined),
-                                                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                                                                className: "form-outline flex-fill mb-0",
-                                                                children: [
-                                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
-                                                                        type: "password",
-                                                                        id: "form3Example4cd",
-                                                                        className: "form-control"
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/components/Register/Register.js",
-                                                                        lineNumber: 49,
-                                                                        columnNumber: 57
-                                                                    }, undefined),
-                                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
-                                                                        className: "form-label",
-                                                                        htmlFor: "form3Example4cd",
-                                                                        children: "Repeat your password"
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/components/Register/Register.js",
-                                                                        lineNumber: 51,
-                                                                        columnNumber: 57
-                                                                    }, undefined)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 48,
-                                                                columnNumber: 53
-                                                            }, undefined)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/components/Register/Register.js",
-                                                        lineNumber: 46,
-                                                        columnNumber: 49
-                                                    }, undefined),
-                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                                                        className: "form-check d-flex justify-content-center mb-5",
-                                                        children: [
-                                                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
-                                                                className: "form-check-input me-2",
-                                                                type: "checkbox",
-                                                                value: "",
-                                                                id: "form2Example3c"
-                                                            }, void 0, false, {
-                                                                fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 57,
-                                                                columnNumber: 53
-                                                            }, undefined),
-                                                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
-                                                                className: "form-check-label",
-                                                                htmlFor: "form2Example3",
-                                                                children: [
-                                                                    "I agree all statements in ",
-                                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
-                                                                        href: "#!",
-                                                                        children: "Terms of service"
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/components/Register/Register.js",
-                                                                        lineNumber: 60,
-                                                                        columnNumber: 83
-                                                                    }, undefined)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 59,
-                                                                columnNumber: 53
-                                                            }, undefined)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/components/Register/Register.js",
-                                                        lineNumber: 56,
-                                                        columnNumber: 49
-                                                    }, undefined),
-                                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                                                        className: "d-flex justify-content-center mx-4 mb-3 mb-lg-4",
-                                                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
-                                                            type: "button",
-                                                            className: "btn btn-primary btn-lg",
-                                                            children: "Register"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Register/Register.js",
-                                                            lineNumber: 65,
-                                                            columnNumber: 53
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "src/components/Register/Register.js",
-                                                        lineNumber: 64,
-                                                        columnNumber: 49
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/components/Register/Register.js",
-                                                lineNumber: 14,
-                                                columnNumber: 45
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/Register/Register.js",
-                                        lineNumber: 10,
-                                        columnNumber: 41
-                                    }, undefined),
-                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                                        className: "col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2",
-                                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("img", {
-                                            src: "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp",
-                                            className: "img-fluid",
-                                            alt: "Sample image"
-                                        }, void 0, false, {
-                                            fileName: "src/components/Register/Register.js",
-                                            lineNumber: 75,
-                                            columnNumber: 45
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/components/Register/Register.js",
-                                        lineNumber: 72,
-                                        columnNumber: 41
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/Register/Register.js",
-                                lineNumber: 9,
-                                columnNumber: 37
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/Register/Register.js",
-                            lineNumber: 8,
-                            columnNumber: 33
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/Register/Register.js",
-                        lineNumber: 7,
-                        columnNumber: 29
-                    }, undefined)
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_navigationDefault.default, {}, void 0, false, {
+                fileName: "src/components/Pages/Home Page/Home.js",
+                lineNumber: 7,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingListDefault.default, {}, void 0, false, {
+                fileName: "src/components/Pages/Home Page/Home.js",
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Pages/Home Page/Home.js",
+        lineNumber: 6,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Home;
+exports.default = Home;
+var _c;
+$RefreshReg$(_c, "Home");
+
+  $parcel$ReactRefreshHelpers$6cc3.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../../shared/Navigation/Navigation":"gNthl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./ShoppingList":"dDzjB"}],"gNthl":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5800 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5800.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Navigation = ()=>{
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("nav", {
+        className: "navbar navbar-expand-lg navbar-light bg-light",
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                className: "navbar-brand",
+                href: "#",
+                children: "Koa Shopping"
+            }, void 0, false, {
+                fileName: "src/components/shared/Navigation/Navigation.js",
+                lineNumber: 5,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                className: "navbar-toggler",
+                type: "button",
+                "data-toggle": "collapse",
+                "data-target": "#navbarSupportedContent",
+                "aria-controls": "navbarSupportedContent",
+                "aria-expanded": "false",
+                "aria-label": "Toggle navigation",
+                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                    className: "navbar-toggler-icon"
                 }, void 0, false, {
-                    fileName: "src/components/Register/Register.js",
-                    lineNumber: 6,
-                    columnNumber: 25
+                    fileName: "src/components/shared/Navigation/Navigation.js",
+                    lineNumber: 9,
+                    columnNumber: 17
                 }, undefined)
             }, void 0, false, {
-                fileName: "src/components/Register/Register.js",
+                fileName: "src/components/shared/Navigation/Navigation.js",
+                lineNumber: 6,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                className: "collapse navbar-collapse",
+                id: "navbarSupportedContent",
+                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("ul", {
+                    className: "navbar-nav mr-auto",
+                    children: [
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
+                            className: "nav-item active",
+                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                                className: "nav-link",
+                                href: "#",
+                                children: "Home"
+                            }, void 0, false, {
+                                fileName: "src/components/shared/Navigation/Navigation.js",
+                                lineNumber: 15,
+                                columnNumber: 25
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/shared/Navigation/Navigation.js",
+                            lineNumber: 14,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
+                            className: "nav-item",
+                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                                className: "nav-link",
+                                href: "#",
+                                children: "Wishlist"
+                            }, void 0, false, {
+                                fileName: "src/components/shared/Navigation/Navigation.js",
+                                lineNumber: 18,
+                                columnNumber: 25
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/shared/Navigation/Navigation.js",
+                            lineNumber: 17,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
+                            className: "nav-item",
+                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                                className: "nav-link",
+                                href: "#",
+                                children: "Cart"
+                            }, void 0, false, {
+                                fileName: "src/components/shared/Navigation/Navigation.js",
+                                lineNumber: 21,
+                                columnNumber: 25
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/shared/Navigation/Navigation.js",
+                            lineNumber: 20,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
+                            className: "nav-item",
+                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                                className: "nav-link",
+                                href: "#",
+                                children: "Items"
+                            }, void 0, false, {
+                                fileName: "src/components/shared/Navigation/Navigation.js",
+                                lineNumber: 24,
+                                columnNumber: 25
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/shared/Navigation/Navigation.js",
+                            lineNumber: 23,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
+                            className: "nav-item",
+                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                                className: "nav-link",
+                                href: "#",
+                                children: "Promotions"
+                            }, void 0, false, {
+                                fileName: "src/components/shared/Navigation/Navigation.js",
+                                lineNumber: 27,
+                                columnNumber: 25
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/shared/Navigation/Navigation.js",
+                            lineNumber: 26,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/shared/Navigation/Navigation.js",
+                    lineNumber: 13,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/shared/Navigation/Navigation.js",
+                lineNumber: 12,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/shared/Navigation/Navigation.js",
+        lineNumber: 4,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Navigation;
+exports.default = Navigation;
+var _c;
+$RefreshReg$(_c, "Navigation");
+
+  $parcel$ReactRefreshHelpers$5800.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dDzjB":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$d425 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$d425.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _shoppingItem = require("./ShoppingItem");
+var _shoppingItemDefault = parcelHelpers.interopDefault(_shoppingItem);
+const ShoppingList = ()=>{
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+        className: "row",
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemDefault.default, {}, void 0, false, {
+                fileName: "src/components/Pages/Home Page/ShoppingList.js",
+                lineNumber: 6,
+                columnNumber: 17
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemDefault.default, {}, void 0, false, {
+                fileName: "src/components/Pages/Home Page/ShoppingList.js",
+                lineNumber: 7,
+                columnNumber: 17
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemDefault.default, {}, void 0, false, {
+                fileName: "src/components/Pages/Home Page/ShoppingList.js",
+                lineNumber: 8,
+                columnNumber: 17
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemDefault.default, {}, void 0, false, {
+                fileName: "src/components/Pages/Home Page/ShoppingList.js",
+                lineNumber: 9,
+                columnNumber: 17
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Pages/Home Page/ShoppingList.js",
+        lineNumber: 5,
+        columnNumber: 9
+    }, undefined);
+};
+_c = ShoppingList;
+exports.default = ShoppingList;
+var _c;
+$RefreshReg$(_c, "ShoppingList");
+
+  $parcel$ReactRefreshHelpers$d425.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./ShoppingItem":"4XzBq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4XzBq":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$fcf3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$fcf3.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const ShoppingItem = ()=>{
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+        className: "col-sm-6 col-md-4 col-lg-3",
+        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+            className: "card h-100 shadow-sm",
+            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                className: "card-body",
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h5", {
+                        className: "card-title",
+                        children: "Card title"
+                    }, void 0, false, {
+                        fileName: "src/components/Pages/Home Page/ShoppingItem.js",
+                        lineNumber: 6,
+                        columnNumber: 21
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                        className: "clearfix mb-3",
+                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                            className: "float-start badge rounded-pill bg-success",
+                            children: "12354.00\u20AC"
+                        }, void 0, false, {
+                            fileName: "src/components/Pages/Home Page/ShoppingItem.js",
+                            lineNumber: 7,
+                            columnNumber: 52
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Pages/Home Page/ShoppingItem.js",
+                        lineNumber: 7,
+                        columnNumber: 21
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h5", {
+                        className: "card-title",
+                        children: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem eaque ut eveniet aut quis rerum. Asperiores accusamus harum ducimus velit odit ut. Saepe, iste optio laudantium sed aliquam sequi."
+                    }, void 0, false, {
+                        fileName: "src/components/Pages/Home Page/ShoppingItem.js",
+                        lineNumber: 10,
+                        columnNumber: 21
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                        className: "d-grid gap-2 my-4",
+                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                            href: "#",
+                            className: "btn btn-warning",
+                            children: "Add to Wish List"
+                        }, void 0, false, {
+                            fileName: "src/components/Pages/Home Page/ShoppingItem.js",
+                            lineNumber: 13,
+                            columnNumber: 56
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Pages/Home Page/ShoppingItem.js",
+                        lineNumber: 13,
+                        columnNumber: 21
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                        className: "d-grid gap-2 my-4",
+                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                            href: "#",
+                            className: "btn btn-warning",
+                            children: "Add to Cart"
+                        }, void 0, false, {
+                            fileName: "src/components/Pages/Home Page/ShoppingItem.js",
+                            lineNumber: 14,
+                            columnNumber: 56
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Pages/Home Page/ShoppingItem.js",
+                        lineNumber: 14,
+                        columnNumber: 21
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Pages/Home Page/ShoppingItem.js",
                 lineNumber: 5,
-                columnNumber: 21
+                columnNumber: 17
             }, undefined)
         }, void 0, false, {
-            fileName: "src/components/Register/Register.js",
+            fileName: "src/components/Pages/Home Page/ShoppingItem.js",
             lineNumber: 4,
-            columnNumber: 17
+            columnNumber: 13
         }, undefined)
     }, void 0, false, {
-        fileName: "src/components/Register/Register.js",
+        fileName: "src/components/Pages/Home Page/ShoppingItem.js",
         lineNumber: 3,
         columnNumber: 9
     }, undefined);
 };
-_c = Register;
-exports.default = Register;
+_c = ShoppingItem;
+exports.default = ShoppingItem;
 var _c;
-$RefreshReg$(_c, "Register");
+$RefreshReg$(_c, "ShoppingItem");
 
-  $parcel$ReactRefreshHelpers$a6f2.postlude(module);
+  $parcel$ReactRefreshHelpers$fcf3.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
