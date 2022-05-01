@@ -4,7 +4,7 @@ import ShoppingList from "./ShoppingList";
 const Home = () => {
   return (
     <div>
-      <Navigation />
+        <Navigation />
       <ShoppingList />
     </div>
   );

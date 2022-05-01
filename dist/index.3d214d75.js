@@ -25582,7 +25582,7 @@ const Home = ()=>{
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_navigationDefault.default, {}, void 0, false, {
                 fileName: "src/components/Pages/Home Page/Home.js",
                 lineNumber: 7,
-                columnNumber: 7
+                columnNumber: 9
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingListDefault.default, {}, void 0, false, {
                 fileName: "src/components/Pages/Home Page/Home.js",
@@ -25606,7 +25606,7 @@ $RefreshReg$(_c, "Home");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../../shared/Navigation/Navigation":"gNthl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./ShoppingList":"dDzjB"}],"gNthl":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../../shared/Navigation/Navigation":"gNthl","./ShoppingList":"dDzjB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gNthl":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$5800 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -25777,27 +25777,44 @@ var _shoppingItem = require("./ShoppingItem");
 var _shoppingItemDefault = parcelHelpers.interopDefault(_shoppingItem);
 const ShoppingList = ()=>{
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-        className: "row",
+        className: "container",
         children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemDefault.default, {}, void 0, false, {
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
+                className: "my-5",
+                children: "Shopping Items"
+            }, void 0, false, {
                 fileName: "src/components/Pages/Home Page/ShoppingList.js",
                 lineNumber: 6,
-                columnNumber: 17
+                columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemDefault.default, {}, void 0, false, {
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                className: "row",
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemDefault.default, {}, void 0, false, {
+                        fileName: "src/components/Pages/Home Page/ShoppingList.js",
+                        lineNumber: 8,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemDefault.default, {}, void 0, false, {
+                        fileName: "src/components/Pages/Home Page/ShoppingList.js",
+                        lineNumber: 9,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemDefault.default, {}, void 0, false, {
+                        fileName: "src/components/Pages/Home Page/ShoppingList.js",
+                        lineNumber: 10,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemDefault.default, {}, void 0, false, {
+                        fileName: "src/components/Pages/Home Page/ShoppingList.js",
+                        lineNumber: 11,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/Pages/Home Page/ShoppingList.js",
                 lineNumber: 7,
-                columnNumber: 17
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemDefault.default, {}, void 0, false, {
-                fileName: "src/components/Pages/Home Page/ShoppingList.js",
-                lineNumber: 8,
-                columnNumber: 17
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemDefault.default, {}, void 0, false, {
-                fileName: "src/components/Pages/Home Page/ShoppingList.js",
-                lineNumber: 9,
-                columnNumber: 17
+                columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
