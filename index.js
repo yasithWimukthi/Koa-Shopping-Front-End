@@ -7,6 +7,6 @@ render(
   document.getElementById('root')
 );
 
-createRoot(document.getElementById('root')).render(
-  <App />
-);
+// createRoot(document.getElementById('root')).render(
+//   <App />
+// );

@@ -12,23 +12,27 @@ const Navigation = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">Home</a>
+                        <Link to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Wishlist</a>
+                        <Link to="/wishlist">Wishlist</Link>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Cart</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Items</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Promotions</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Customers</a>
-                    </li>
+                    {/*<li className="nav-item">*/}
+                    {/*    <a className="nav-link" href="#">Cart</a>*/}
+                    {/*    <Link to="/about">About</Link>*/}
+                    {/*</li>*/}
+                    {/*<li className="nav-item">*/}
+                    {/*    <a className="nav-link" href="#">Items</a>*/}
+                    {/*    <Link to="/about">About</Link>*/}
+                    {/*</li>*/}
+                    {/*<li className="nav-item">*/}
+                    {/*    <a className="nav-link" href="#">Promotions</a>*/}
+                    {/*    <Link to="/about">About</Link>*/}
+                    {/*</li>*/}
+                    {/*<li className="nav-item">*/}
+                    {/*    <a className="nav-link" href="#">Customers</a>*/}
+                    {/*    <Link to="/about">About</Link>*/}
+                    {/*</li>*/}
                 </ul>
             </div>
         </nav>
