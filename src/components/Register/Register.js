@@ -26,6 +26,7 @@ const Register = () => {
         }
         axios.post('http://127.0.0.1:3000/register', user)
             .then(function (response) {
+                console.log(response);
                 navigate("/home", { replace: true });
             })
             .catch(function (error) {
