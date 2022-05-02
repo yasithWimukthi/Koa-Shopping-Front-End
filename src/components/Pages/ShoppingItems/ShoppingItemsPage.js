@@ -8,19 +8,35 @@ const ShoppingItemsPage = () => {
         name: "",
         price: "",
         quantity: "",
-        description: ""
+        description: "",
+        promotionPrice: 0,
     });
+
+    const [selectedItem, setSelectedItem] = useState({
+        name: "",
+        price: "",
+        quantity: "",
+        description: "",
+    })
 
     const [items, setItems] = useState([]);
 
     useEffect(() => fetchShoppingItems(), []);
 
+    /**
+     * Fetch shopping items from the backend
+     * @returns {Promise<void>}
+     */
     const fetchShoppingItems = () => {
         fetch('http://localhost:3000/items/get-all')
             .then(response => response.json())
             .then(data => setItems([ ...data]));
+        console.log(items);
     }
 
+    /**
+     * handle the change of the input fields
+     */
     const onInputChange = event => {
         setItem({
             ...item,
@@ -28,6 +44,19 @@ const ShoppingItemsPage = () => {
         });
     };
 
+    /**
+     * handle the change of the input fields
+     */
+    const selectedItemChangeHandler = event => {
+        setSelectedItem({
+            ...selectedItem,
+            [event.target.name]: event.target.value
+        });
+    };
+
+    /**
+     * submit the add item form
+     */
     const submitHandler = event => {
         event.preventDefault();
 
@@ -47,6 +76,30 @@ const ShoppingItemsPage = () => {
                 console.log('error', error);
             });
 
+    }
+
+    /**
+     * submit the update item form
+     */
+    const updateItemHandler = event => {
+        event.preventDefault();
+
+        axios.put(`http://localhost:3000/items/edit/${selectedItem.id}`, selectedItem)
+            .then(function (response) {
+                console.log('update success', response);
+                setSelectedItem({
+                    name: "",
+                    price: "",
+                    quantity: "",
+                    description: ""
+                });
+                console.log('edit '+response.data)
+                fetchShoppingItems();
+            })
+            .catch(function (error) {
+                alert(error.message);
+                console.log('error', error);
+            });
     }
 
     return (
@@ -79,7 +132,12 @@ const ShoppingItemsPage = () => {
                                 <td>{shopItem.quantity}</td>
                                 <td>{shopItem.promotionPrice ? shopItem.promotionPrice : 0}</td>
                                 <td>
-                                    <button className="btn btn-success" data-toggle="modal" data-target="#updateItemModal">Edit</button>
+                                    <button
+                                        className="btn btn-success"
+                                        data-toggle="modal"
+                                        data-target="#updateItemModal"
+                                        onClick={() => setSelectedItem(shopItem)}
+                                    >Edit</button>
                                 </td>
                             </tr>
                         )
@@ -165,13 +223,13 @@ const ShoppingItemsPage = () => {
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">Add Item</h5>
+                            <h5 className="modal-title" id="exampleModalLabel">Update Item</h5>
                             <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div className="modal-body">
-                            <form onSubmit={submitHandler}>
+                            <form onSubmit={updateItemHandler}>
                                 <div className="form-group">
                                     <label htmlFor="name">Item Name</label>
                                     <input
@@ -179,8 +237,8 @@ const ShoppingItemsPage = () => {
                                         className="form-control"
                                         id="name"
                                         name="name"
-                                        value={item.name}
-                                        onChange={onInputChange}
+                                        value={selectedItem.name}
+                                        onChange={selectedItemChangeHandler}
                                         placeholder="Enter Item Name"/>
                                 </div>
                                 <div className="form-group">
@@ -191,8 +249,8 @@ const ShoppingItemsPage = () => {
                                         id="quantity"
                                         placeholder="Quantity"
                                         name="quantity"
-                                        value={item.quantity}
-                                        onChange={onInputChange}
+                                        value={selectedItem.quantity}
+                                        onChange={selectedItemChangeHandler}
                                     />
                                 </div>
                                 <div className="form-group">
@@ -203,8 +261,20 @@ const ShoppingItemsPage = () => {
                                         id="price"
                                         placeholder="Price"
                                         name="price"
-                                        value={item.price}
-                                        onChange={onInputChange}
+                                        value={selectedItem.price}
+                                        onChange={selectedItemChangeHandler}
+                                    />
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="price">Promotion Price</label>
+                                    <input
+                                        type="number"
+                                        className="form-control"
+                                        id="price"
+                                        placeholder="Price"
+                                        name="promotionPrice"
+                                        value={selectedItem.promotionPrice}
+                                        onChange={selectedItemChangeHandler}
                                     />
                                 </div>
                                 <div className="form-group">
@@ -215,8 +285,8 @@ const ShoppingItemsPage = () => {
                                         id="description"
                                         placeholder="Description"
                                         name="description"
-                                        value={item.description}
-                                        onChange={onInputChange}
+                                        value={selectedItem.description}
+                                        onChange={selectedItemChangeHandler}
                                     ></textarea>
                                 </div>
                                 <div className="modal-footer">
