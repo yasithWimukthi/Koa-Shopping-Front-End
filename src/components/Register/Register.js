@@ -26,6 +26,7 @@ const Register = () => {
         }
         axios.post('http://127.0.0.1:3000/register', user)
             .then(function (response) {
+                console.log(response);
                 navigate("/home", { replace: true });
             })
             .catch(function (error) {
@@ -54,6 +55,7 @@ const Register = () => {
                                                             className="form-control"
                                                             placeholder="Name"
                                                             name="name"
+                                                            value={user.name}
                                                             onChange={onInputChange}
                                                         />
                                                     </div>
@@ -67,6 +69,7 @@ const Register = () => {
                                                             className="form-control"
                                                             placeholder="Email"
                                                             name="email"
+                                                            value={user.email}
                                                             onChange={onInputChange}
                                                         />
                                                     </div>
@@ -80,6 +83,7 @@ const Register = () => {
                                                             className="form-control"
                                                             placeholder="Password"
                                                             name="password"
+                                                            value={user.password}
                                                             onChange={onInputChange}
                                                         />
                                                     </div>
@@ -93,6 +97,7 @@ const Register = () => {
                                                             className="form-control"
                                                             placeholder="Confirm Password"
                                                             name="confirmPassword"
+                                                            value={user.confirmPassword}
                                                             onChange={onInputChange}
                                                         />
                                                     </div>

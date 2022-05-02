@@ -25227,6 +25227,7 @@ const Register = ()=>{
             return;
         }
         _axiosDefault.default.post('http://127.0.0.1:3000/register', user).then(function(response) {
+            console.log(response);
             navigate("/home", {
                 replace: true
             });
@@ -25257,7 +25258,7 @@ const Register = ()=>{
                                                 children: "Register"
                                             }, void 0, false, {
                                                 fileName: "src/components/Register/Register.js",
-                                                lineNumber: 45,
+                                                lineNumber: 46,
                                                 columnNumber: 45
                                             }, undefined),
                                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("form", {
@@ -25274,20 +25275,21 @@ const Register = ()=>{
                                                                 className: "form-control",
                                                                 placeholder: "Name",
                                                                 name: "name",
+                                                                value: user.name,
                                                                 onChange: onInputChange
                                                             }, void 0, false, {
                                                                 fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 51,
+                                                                lineNumber: 52,
                                                                 columnNumber: 57
                                                             }, undefined)
                                                         }, void 0, false, {
                                                             fileName: "src/components/Register/Register.js",
-                                                            lineNumber: 50,
+                                                            lineNumber: 51,
                                                             columnNumber: 53
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/components/Register/Register.js",
-                                                        lineNumber: 49,
+                                                        lineNumber: 50,
                                                         columnNumber: 49
                                                     }, undefined),
                                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -25300,20 +25302,21 @@ const Register = ()=>{
                                                                 className: "form-control",
                                                                 placeholder: "Email",
                                                                 name: "email",
+                                                                value: user.email,
                                                                 onChange: onInputChange
                                                             }, void 0, false, {
                                                                 fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 64,
+                                                                lineNumber: 66,
                                                                 columnNumber: 57
                                                             }, undefined)
                                                         }, void 0, false, {
                                                             fileName: "src/components/Register/Register.js",
-                                                            lineNumber: 63,
+                                                            lineNumber: 65,
                                                             columnNumber: 53
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/components/Register/Register.js",
-                                                        lineNumber: 62,
+                                                        lineNumber: 64,
                                                         columnNumber: 49
                                                     }, undefined),
                                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -25326,20 +25329,21 @@ const Register = ()=>{
                                                                 className: "form-control",
                                                                 placeholder: "Password",
                                                                 name: "password",
+                                                                value: user.password,
                                                                 onChange: onInputChange
                                                             }, void 0, false, {
                                                                 fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 77,
+                                                                lineNumber: 80,
                                                                 columnNumber: 57
                                                             }, undefined)
                                                         }, void 0, false, {
                                                             fileName: "src/components/Register/Register.js",
-                                                            lineNumber: 76,
+                                                            lineNumber: 79,
                                                             columnNumber: 53
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/components/Register/Register.js",
-                                                        lineNumber: 75,
+                                                        lineNumber: 78,
                                                         columnNumber: 49
                                                     }, undefined),
                                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -25352,20 +25356,21 @@ const Register = ()=>{
                                                                 className: "form-control",
                                                                 placeholder: "Confirm Password",
                                                                 name: "confirmPassword",
+                                                                value: user.confirmPassword,
                                                                 onChange: onInputChange
                                                             }, void 0, false, {
                                                                 fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 90,
+                                                                lineNumber: 94,
                                                                 columnNumber: 57
                                                             }, undefined)
                                                         }, void 0, false, {
                                                             fileName: "src/components/Register/Register.js",
-                                                            lineNumber: 89,
+                                                            lineNumber: 93,
                                                             columnNumber: 53
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/components/Register/Register.js",
-                                                        lineNumber: 88,
+                                                        lineNumber: 92,
                                                         columnNumber: 49
                                                     }, undefined),
                                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -25387,7 +25392,7 @@ const Register = ()=>{
                                                                         checked: true
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/Register/Register.js",
-                                                                        lineNumber: 103,
+                                                                        lineNumber: 108,
                                                                         columnNumber: 57
                                                                     }, undefined),
                                                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
@@ -25396,13 +25401,13 @@ const Register = ()=>{
                                                                         children: "Customer"
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/Register/Register.js",
-                                                                        lineNumber: 112,
+                                                                        lineNumber: 117,
                                                                         columnNumber: 61
                                                                     }, undefined)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 102,
+                                                                lineNumber: 107,
                                                                 columnNumber: 53
                                                             }, undefined),
                                                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -25417,7 +25422,7 @@ const Register = ()=>{
                                                                         onChange: onInputChange
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/Register/Register.js",
-                                                                        lineNumber: 118,
+                                                                        lineNumber: 123,
                                                                         columnNumber: 57
                                                                     }, undefined),
                                                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
@@ -25426,19 +25431,19 @@ const Register = ()=>{
                                                                         children: "Trader"
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/Register/Register.js",
-                                                                        lineNumber: 126,
+                                                                        lineNumber: 131,
                                                                         columnNumber: 61
                                                                     }, undefined)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 117,
+                                                                lineNumber: 122,
                                                                 columnNumber: 53
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/components/Register/Register.js",
-                                                        lineNumber: 101,
+                                                        lineNumber: 106,
                                                         columnNumber: 49
                                                     }, undefined),
                                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -25449,24 +25454,24 @@ const Register = ()=>{
                                                             children: "Sign Up"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Register/Register.js",
-                                                            lineNumber: 134,
+                                                            lineNumber: 139,
                                                             columnNumber: 53
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/components/Register/Register.js",
-                                                        lineNumber: 133,
+                                                        lineNumber: 138,
                                                         columnNumber: 49
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/Register/Register.js",
-                                                lineNumber: 47,
+                                                lineNumber: 48,
                                                 columnNumber: 45
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Register/Register.js",
-                                        lineNumber: 44,
+                                        lineNumber: 45,
                                         columnNumber: 41
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -25477,48 +25482,48 @@ const Register = ()=>{
                                             alt: "Sample image"
                                         }, void 0, false, {
                                             fileName: "src/components/Register/Register.js",
-                                            lineNumber: 141,
+                                            lineNumber: 146,
                                             columnNumber: 45
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Register/Register.js",
-                                        lineNumber: 140,
+                                        lineNumber: 145,
                                         columnNumber: 41
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Register/Register.js",
-                                lineNumber: 43,
+                                lineNumber: 44,
                                 columnNumber: 37
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Register/Register.js",
-                            lineNumber: 42,
+                            lineNumber: 43,
                             columnNumber: 33
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Register/Register.js",
-                        lineNumber: 41,
+                        lineNumber: 42,
                         columnNumber: 29
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Register/Register.js",
-                    lineNumber: 40,
+                    lineNumber: 41,
                     columnNumber: 25
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Register/Register.js",
-                lineNumber: 39,
+                lineNumber: 40,
                 columnNumber: 21
             }, undefined)
         }, void 0, false, {
             fileName: "src/components/Register/Register.js",
-            lineNumber: 38,
+            lineNumber: 39,
             columnNumber: 17
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Register/Register.js",
-        lineNumber: 37,
+        lineNumber: 38,
         columnNumber: 9
     }, undefined);
 };
@@ -25537,7 +25542,7 @@ $RefreshReg$(_c, "Register");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"fdOAw"}],"jo6P5":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","react-router-dom":"fdOAw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jo6P5":[function(require,module,exports) {
 module.exports = require('./lib/axios');
 
 },{"./lib/axios":"63MyY"}],"63MyY":[function(require,module,exports) {
@@ -28892,157 +28897,7 @@ var utils = require('./../utils');
     return utils.isObject(payload) && payload.isAxiosError === true;
 };
 
-},{"./../utils":"5By4s"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, '__esModule', {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === 'default' || key === '__esModule' || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"km3Ru":[function(require,module,exports) {
-"use strict";
-var Refresh = require('react-refresh/runtime');
-function debounce(func, delay) {
-    var args1;
-    var timeout = undefined;
-    return function(args) {
-        clearTimeout(timeout);
-        timeout = setTimeout(function() {
-            timeout = undefined;
-            func.call(null, args);
-        }, delay);
-    };
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30); // Everthing below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module) {
-    window.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module.id + ' ' + id);
-    };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module) {
-    if (isReactRefreshBoundary(module.exports)) {
-        registerExportsForReactRefresh(module);
-        if (module.hot) {
-            module.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module.exports;
-            });
-            module.hot.accept(function(getParents) {
-                var prevExports = module.hot.data.prevExports;
-                var nextExports = module.exports; // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports); // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
-    }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = '__esModule' in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === '__esModule') continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-} // When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = '__esModule' in exports;
-    for(var key in exports){
-        if (key === '__esModule') continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module) {
-    var exports = module.exports, id = module.id;
-    Refresh.register(exports, id + ' %exports%');
-    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = '__esModule' in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        Refresh.register(exportValue, id + ' %exports% ' + key);
-    }
-}
-
-},{"react-refresh/runtime":"786KC"}],"fdOAw":[function(require,module,exports) {
+},{"./../utils":"5By4s"}],"fdOAw":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "MemoryRouter", ()=>_reactRouter.MemoryRouter
@@ -30045,7 +29900,37 @@ function _extends() {
 }
 exports.default = _extends;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"btA8E":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, '__esModule', {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === 'default' || key === '__esModule' || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"btA8E":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "NavigationType", ()=>_history.Action
@@ -30834,7 +30719,127 @@ function _renderMatches(matches, parentMatches) {
     return _renderMatches(matches);
 }
 
-},{"history":"iE5Zp","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7fnRJ":[function(require,module,exports) {
+},{"history":"iE5Zp","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"km3Ru":[function(require,module,exports) {
+"use strict";
+var Refresh = require('react-refresh/runtime');
+function debounce(func, delay) {
+    var args1;
+    var timeout = undefined;
+    return function(args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(function() {
+            timeout = undefined;
+            func.call(null, args);
+        }, delay);
+    };
+}
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30); // Everthing below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module) {
+    window.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module.id + ' ' + id);
+    };
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module) {
+    if (isReactRefreshBoundary(module.exports)) {
+        registerExportsForReactRefresh(module);
+        if (module.hot) {
+            module.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module.exports;
+            });
+            module.hot.accept(function(getParents) {
+                var prevExports = module.hot.data.prevExports;
+                var nextExports = module.exports; // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports); // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
+    }
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = '__esModule' in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === '__esModule') continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+} // When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = '__esModule' in exports;
+    for(var key in exports){
+        if (key === '__esModule') continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module) {
+    var exports = module.exports, id = module.id;
+    Refresh.register(exports, id + ' %exports%');
+    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = '__esModule' in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        Refresh.register(exportValue, id + ' %exports% ' + key);
+    }
+}
+
+},{"react-refresh/runtime":"786KC"}],"7fnRJ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$6cc3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -31610,7 +31615,51 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _helper = require("../../../helper");
+var _s = $RefreshSig$();
 const ShoppingItemsPage = ()=>{
+    _s();
+    const [item, setItem] = _react.useState({
+        name: "",
+        price: "",
+        quantity: "",
+        description: ""
+    });
+    const [items, setItems] = _react.useState([]);
+    _react.useEffect(()=>fetchShoppingItems()
+    , []);
+    const fetchShoppingItems = ()=>{
+        fetch('http://localhost:3000/items/get-all').then((response)=>response.json()
+        ).then((data)=>setItems([
+                ...data
+            ])
+        );
+    };
+    const onInputChange = (event)=>{
+        setItem({
+            ...item,
+            [event.target.name]: event.target.value
+        });
+    };
+    const submitHandler = (event)=>{
+        event.preventDefault();
+        _axiosDefault.default.post('http://localhost:3000/items/', item).then(function(response) {
+            console.log('success', response);
+            setItem({
+                name: "",
+                price: "",
+                quantity: "",
+                description: ""
+            });
+            fetchShoppingItems();
+        }).catch(function(error) {
+            alert(error.message);
+            console.log('error', error);
+        });
+    };
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
         className: "container",
         children: [
@@ -31619,7 +31668,7 @@ const ShoppingItemsPage = ()=>{
                 children: "Shopping Items"
             }, void 0, false, {
                 fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                lineNumber: 4,
+                lineNumber: 54,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -31634,12 +31683,12 @@ const ShoppingItemsPage = ()=>{
                     children: "Add Item"
                 }, void 0, false, {
                     fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                    lineNumber: 6,
+                    lineNumber: 56,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                lineNumber: 5,
+                lineNumber: 55,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("table", {
@@ -31653,7 +31702,7 @@ const ShoppingItemsPage = ()=>{
                                     children: "#"
                                 }, void 0, false, {
                                     fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                    lineNumber: 11,
+                                    lineNumber: 61,
                                     columnNumber: 21
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
@@ -31661,7 +31710,7 @@ const ShoppingItemsPage = ()=>{
                                     children: "Name"
                                 }, void 0, false, {
                                     fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                    lineNumber: 12,
+                                    lineNumber: 62,
                                     columnNumber: 21
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
@@ -31669,7 +31718,7 @@ const ShoppingItemsPage = ()=>{
                                     children: "Description"
                                 }, void 0, false, {
                                     fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                    lineNumber: 13,
+                                    lineNumber: 63,
                                     columnNumber: 21
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
@@ -31677,7 +31726,7 @@ const ShoppingItemsPage = ()=>{
                                     children: "Price"
                                 }, void 0, false, {
                                     fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                    lineNumber: 14,
+                                    lineNumber: 64,
                                     columnNumber: 21
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
@@ -31685,7 +31734,7 @@ const ShoppingItemsPage = ()=>{
                                     children: "Quantity"
                                 }, void 0, false, {
                                     fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                    lineNumber: 15,
+                                    lineNumber: 65,
                                     columnNumber: 21
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
@@ -31693,7 +31742,7 @@ const ShoppingItemsPage = ()=>{
                                     children: "Promotion Price"
                                 }, void 0, false, {
                                     fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                    lineNumber: 16,
+                                    lineNumber: 66,
                                     columnNumber: 21
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
@@ -31701,98 +31750,99 @@ const ShoppingItemsPage = ()=>{
                                     children: "Edit"
                                 }, void 0, false, {
                                     fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                    lineNumber: 17,
+                                    lineNumber: 67,
                                     columnNumber: 21
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                            lineNumber: 10,
+                            lineNumber: 60,
                             columnNumber: 17
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                        lineNumber: 9,
+                        lineNumber: 59,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tbody", {
-                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tr", {
-                            children: [
-                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
-                                    scope: "row",
-                                    children: "1"
-                                }, void 0, false, {
-                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                    lineNumber: 22,
-                                    columnNumber: 21
-                                }, undefined),
-                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
-                                    children: "Mark"
-                                }, void 0, false, {
-                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                    lineNumber: 23,
-                                    columnNumber: 21
-                                }, undefined),
-                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
-                                    children: "Otto"
-                                }, void 0, false, {
-                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                    lineNumber: 24,
-                                    columnNumber: 21
-                                }, undefined),
-                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
-                                    children: "@mdo"
-                                }, void 0, false, {
-                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                    lineNumber: 25,
-                                    columnNumber: 21
-                                }, undefined),
-                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
-                                    children: "Otto"
-                                }, void 0, false, {
-                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                    lineNumber: 26,
-                                    columnNumber: 21
-                                }, undefined),
-                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
-                                    children: "@mdo"
-                                }, void 0, false, {
-                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                    lineNumber: 27,
-                                    columnNumber: 21
-                                }, undefined),
-                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
-                                    children: [
-                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                        children: items && items.length > 0 && items.map((shopItem, index)=>{
+                            return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tr", {
+                                children: [
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
+                                        scope: "row",
+                                        children: index + 1
+                                    }, void 0, false, {
+                                        fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                        lineNumber: 75,
+                                        columnNumber: 33
+                                    }, undefined),
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
+                                        children: shopItem.name
+                                    }, void 0, false, {
+                                        fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                        lineNumber: 76,
+                                        columnNumber: 33
+                                    }, undefined),
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
+                                        children: shopItem.description
+                                    }, void 0, false, {
+                                        fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                        lineNumber: 77,
+                                        columnNumber: 33
+                                    }, undefined),
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
+                                        children: shopItem.price
+                                    }, void 0, false, {
+                                        fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                        lineNumber: 78,
+                                        columnNumber: 33
+                                    }, undefined),
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
+                                        children: shopItem.quantity
+                                    }, void 0, false, {
+                                        fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                        lineNumber: 79,
+                                        columnNumber: 33
+                                    }, undefined),
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
+                                        children: shopItem.promotionPrice ? shopItem.promotionPrice : 0
+                                    }, void 0, false, {
+                                        fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                        lineNumber: 80,
+                                        columnNumber: 33
+                                    }, undefined),
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
+                                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
                                             className: "btn btn-success",
+                                            "data-toggle": "modal",
+                                            "data-target": "#updateItemModal",
                                             children: "Edit"
                                         }, void 0, false, {
                                             fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                            lineNumber: 28,
-                                            columnNumber: 25
-                                        }, undefined),
-                                        " "
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                    lineNumber: 28,
-                                    columnNumber: 21
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                            lineNumber: 21,
-                            columnNumber: 17
-                        }, undefined)
+                                            lineNumber: 82,
+                                            columnNumber: 37
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                        lineNumber: 81,
+                                        columnNumber: 33
+                                    }, undefined)
+                                ]
+                            }, index, true, {
+                                fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                lineNumber: 74,
+                                columnNumber: 29
+                            }, undefined);
+                        })
                     }, void 0, false, {
                         fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                        lineNumber: 20,
+                        lineNumber: 70,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                lineNumber: 8,
+                lineNumber: 58,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -31817,7 +31867,7 @@ const ShoppingItemsPage = ()=>{
                                         children: "Add Item"
                                     }, void 0, false, {
                                         fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                        lineNumber: 40,
+                                        lineNumber: 98,
                                         columnNumber: 29
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -31830,23 +31880,24 @@ const ShoppingItemsPage = ()=>{
                                             children: "\xd7"
                                         }, void 0, false, {
                                             fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                            lineNumber: 42,
+                                            lineNumber: 100,
                                             columnNumber: 33
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                        lineNumber: 41,
+                                        lineNumber: 99,
                                         columnNumber: 29
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                lineNumber: 39,
+                                lineNumber: 97,
                                 columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                                 className: "modal-body",
                                 children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("form", {
+                                    onSubmit: submitHandler,
                                     children: [
                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                                             className: "form-group",
@@ -31856,7 +31907,7 @@ const ShoppingItemsPage = ()=>{
                                                     children: "Item Name"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                                    lineNumber: 48,
+                                                    lineNumber: 106,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
@@ -31864,17 +31915,18 @@ const ShoppingItemsPage = ()=>{
                                                     className: "form-control",
                                                     id: "name",
                                                     name: "name",
-                                                    "aria-describedby": "emailHelp",
+                                                    value: item.name,
+                                                    onChange: onInputChange,
                                                     placeholder: "Enter Item Name"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                                    lineNumber: 49,
+                                                    lineNumber: 107,
                                                     columnNumber: 37
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                            lineNumber: 47,
+                                            lineNumber: 105,
                                             columnNumber: 33
                                         }, undefined),
                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -31885,7 +31937,7 @@ const ShoppingItemsPage = ()=>{
                                                     children: "Quantity"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                                    lineNumber: 53,
+                                                    lineNumber: 117,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
@@ -31893,16 +31945,48 @@ const ShoppingItemsPage = ()=>{
                                                     className: "form-control",
                                                     id: "quantity",
                                                     placeholder: "Quantity",
-                                                    name: "quantity"
+                                                    name: "quantity",
+                                                    value: item.quantity,
+                                                    onChange: onInputChange
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                                    lineNumber: 54,
+                                                    lineNumber: 118,
                                                     columnNumber: 37
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                            lineNumber: 52,
+                                            lineNumber: 116,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                            className: "form-group",
+                                            children: [
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
+                                                    htmlFor: "price",
+                                                    children: "Price"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 129,
+                                                    columnNumber: 37
+                                                }, undefined),
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                                                    type: "number",
+                                                    className: "form-control",
+                                                    id: "price",
+                                                    placeholder: "Price",
+                                                    name: "price",
+                                                    value: item.price,
+                                                    onChange: onInputChange
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 130,
+                                                    columnNumber: 37
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                            lineNumber: 128,
                                             columnNumber: 33
                                         }, undefined),
                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -31913,7 +31997,7 @@ const ShoppingItemsPage = ()=>{
                                                     children: "Description"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                                    lineNumber: 58,
+                                                    lineNumber: 141,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("textarea", {
@@ -31921,16 +32005,18 @@ const ShoppingItemsPage = ()=>{
                                                     className: "form-control",
                                                     id: "description",
                                                     placeholder: "Description",
-                                                    name: "description"
+                                                    name: "description",
+                                                    value: item.description,
+                                                    onChange: onInputChange
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                                    lineNumber: 59,
+                                                    lineNumber: 142,
                                                     columnNumber: 37
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                            lineNumber: 57,
+                                            lineNumber: 140,
                                             columnNumber: 33
                                         }, undefined),
                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -31943,7 +32029,7 @@ const ShoppingItemsPage = ()=>{
                                                     children: "Close"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                                    lineNumber: 63,
+                                                    lineNumber: 153,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -31952,49 +32038,279 @@ const ShoppingItemsPage = ()=>{
                                                     children: "Add Item"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                                    lineNumber: 64,
+                                                    lineNumber: 154,
                                                     columnNumber: 37
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                            lineNumber: 62,
+                                            lineNumber: 152,
                                             columnNumber: 33
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                    lineNumber: 46,
+                                    lineNumber: 104,
                                     columnNumber: 29
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                                lineNumber: 45,
+                                lineNumber: 103,
                                 columnNumber: 25
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                        lineNumber: 38,
+                        lineNumber: 96,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                    lineNumber: 37,
+                    lineNumber: 95,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-                lineNumber: 35,
+                lineNumber: 93,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                className: "modal fade",
+                id: "updateItemModal",
+                tabIndex: "-1",
+                role: "dialog",
+                "aria-labelledby": "exampleModalLabel",
+                "aria-hidden": "true",
+                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    className: "modal-dialog",
+                    role: "document",
+                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                        className: "modal-content",
+                        children: [
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                className: "modal-header",
+                                children: [
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h5", {
+                                        className: "modal-title",
+                                        id: "exampleModalLabel",
+                                        children: "Add Item"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                        lineNumber: 168,
+                                        columnNumber: 29
+                                    }, undefined),
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                                        type: "button",
+                                        className: "close",
+                                        "data-dismiss": "modal",
+                                        "aria-label": "Close",
+                                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("span", {
+                                            "aria-hidden": "true",
+                                            children: "\xd7"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                            lineNumber: 170,
+                                            columnNumber: 33
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                        lineNumber: 169,
+                                        columnNumber: 29
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                lineNumber: 167,
+                                columnNumber: 25
+                            }, undefined),
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                className: "modal-body",
+                                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("form", {
+                                    onSubmit: submitHandler,
+                                    children: [
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                            className: "form-group",
+                                            children: [
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
+                                                    htmlFor: "name",
+                                                    children: "Item Name"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 176,
+                                                    columnNumber: 37
+                                                }, undefined),
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                                                    type: "text",
+                                                    className: "form-control",
+                                                    id: "name",
+                                                    name: "name",
+                                                    value: item.name,
+                                                    onChange: onInputChange,
+                                                    placeholder: "Enter Item Name"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 177,
+                                                    columnNumber: 37
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                            lineNumber: 175,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                            className: "form-group",
+                                            children: [
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
+                                                    htmlFor: "quantity",
+                                                    children: "Quantity"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 187,
+                                                    columnNumber: 37
+                                                }, undefined),
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                                                    type: "number",
+                                                    className: "form-control",
+                                                    id: "quantity",
+                                                    placeholder: "Quantity",
+                                                    name: "quantity",
+                                                    value: item.quantity,
+                                                    onChange: onInputChange
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 188,
+                                                    columnNumber: 37
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                            lineNumber: 186,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                            className: "form-group",
+                                            children: [
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
+                                                    htmlFor: "price",
+                                                    children: "Price"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 199,
+                                                    columnNumber: 37
+                                                }, undefined),
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                                                    type: "number",
+                                                    className: "form-control",
+                                                    id: "price",
+                                                    placeholder: "Price",
+                                                    name: "price",
+                                                    value: item.price,
+                                                    onChange: onInputChange
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 200,
+                                                    columnNumber: 37
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                            lineNumber: 198,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                            className: "form-group",
+                                            children: [
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
+                                                    htmlFor: "description",
+                                                    children: "Description"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 211,
+                                                    columnNumber: 37
+                                                }, undefined),
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("textarea", {
+                                                    type: "number",
+                                                    className: "form-control",
+                                                    id: "description",
+                                                    placeholder: "Description",
+                                                    name: "description",
+                                                    value: item.description,
+                                                    onChange: onInputChange
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 212,
+                                                    columnNumber: 37
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                            lineNumber: 210,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                            className: "modal-footer",
+                                            children: [
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                                                    type: "button",
+                                                    className: "btn btn-secondary",
+                                                    "data-dismiss": "modal",
+                                                    children: "Close"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 223,
+                                                    columnNumber: 37
+                                                }, undefined),
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                                                    type: "submit",
+                                                    className: "btn btn-success",
+                                                    children: "Update Item"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                                    lineNumber: 224,
+                                                    columnNumber: 37
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                            lineNumber: 222,
+                                            columnNumber: 33
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                    lineNumber: 174,
+                                    columnNumber: 29
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                                lineNumber: 173,
+                                columnNumber: 25
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                        lineNumber: 166,
+                        columnNumber: 21
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                    lineNumber: 165,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
+                lineNumber: 163,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Pages/ShoppingItems/ShoppingItemsPage.js",
-        lineNumber: 3,
+        lineNumber: 53,
         columnNumber: 9
     }, undefined);
 };
+_s(ShoppingItemsPage, "8A7p8YhR/joF9svV/OK+5ULLICw=");
 _c = ShoppingItemsPage;
 exports.default = ShoppingItemsPage;
 var _c;
@@ -32005,7 +32321,29 @@ $RefreshReg$(_c, "ShoppingItemsPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1ATPE":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../../../helper":"3r8hW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3r8hW":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "postData", ()=>postData
+);
+async function postData(url = '', data = {}) {
+    // Default options are marked with *
+    const response = await fetch(url, {
+        method: 'POST',
+        mode: 'cors',
+        cache: 'no-cache',
+        credentials: 'same-origin',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        redirect: 'follow',
+        referrerPolicy: 'no-referrer',
+        body: JSON.stringify(data) // body data type must match "Content-Type" header
+    });
+    return response.json(); // parses JSON response into native JavaScript objects
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1ATPE":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$d1a2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
