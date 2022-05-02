@@ -30960,7 +30960,19 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
 const ShoppingItem = ({ item  })=>{
+    const addToCart = (selectedItem)=>{
+        console.log(selectedItem);
+        _axiosDefault.default.post('http://localhost:3000/cart/', selectedItem).then(function(response) {
+            console.log('success', response.data);
+            alert('Item added to cart');
+        }).catch(function(error) {
+            alert(error.message);
+            console.log('error', error);
+        });
+    };
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
         className: "col-sm-6 col-md-4 col-lg-3",
         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -30973,7 +30985,7 @@ const ShoppingItem = ({ item  })=>{
                         children: item.name
                     }, void 0, false, {
                         fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-                        lineNumber: 6,
+                        lineNumber: 23,
                         columnNumber: 21
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -30986,12 +30998,12 @@ const ShoppingItem = ({ item  })=>{
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-                            lineNumber: 7,
+                            lineNumber: 24,
                             columnNumber: 52
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-                        lineNumber: 7,
+                        lineNumber: 24,
                         columnNumber: 21
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h5", {
@@ -31002,7 +31014,7 @@ const ShoppingItem = ({ item  })=>{
                         children: item.description
                     }, void 0, false, {
                         fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-                        lineNumber: 10,
+                        lineNumber: 27,
                         columnNumber: 21
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -31013,44 +31025,45 @@ const ShoppingItem = ({ item  })=>{
                             children: "Add to Wish List"
                         }, void 0, false, {
                             fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-                            lineNumber: 11,
+                            lineNumber: 28,
                             columnNumber: 56
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-                        lineNumber: 11,
+                        lineNumber: 28,
                         columnNumber: 21
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                         className: "d-grid gap-2 my-4",
-                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
-                            href: "#",
+                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
                             className: "btn btn-warning",
+                            onClick: ()=>addToCart(item)
+                            ,
                             children: "Add to Cart"
                         }, void 0, false, {
                             fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-                            lineNumber: 12,
+                            lineNumber: 29,
                             columnNumber: 56
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-                        lineNumber: 12,
+                        lineNumber: 29,
                         columnNumber: 21
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-                lineNumber: 5,
+                lineNumber: 22,
                 columnNumber: 17
             }, undefined)
         }, void 0, false, {
             fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-            lineNumber: 4,
+            lineNumber: 21,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-        lineNumber: 3,
+        lineNumber: 20,
         columnNumber: 9
     }, undefined);
 };
@@ -31064,7 +31077,7 @@ $RefreshReg$(_c, "ShoppingItem");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gNthl":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","axios":"jo6P5"}],"gNthl":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$5800 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
