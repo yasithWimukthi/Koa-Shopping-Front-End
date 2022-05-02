@@ -54,6 +54,7 @@ const Register = () => {
                                                             className="form-control"
                                                             placeholder="Name"
                                                             name="name"
+                                                            value={user.name}
                                                             onChange={onInputChange}
                                                         />
                                                     </div>
@@ -67,6 +68,7 @@ const Register = () => {
                                                             className="form-control"
                                                             placeholder="Email"
                                                             name="email"
+                                                            value={user.email}
                                                             onChange={onInputChange}
                                                         />
                                                     </div>
@@ -80,6 +82,7 @@ const Register = () => {
                                                             className="form-control"
                                                             placeholder="Password"
                                                             name="password"
+                                                            value={user.password}
                                                             onChange={onInputChange}
                                                         />
                                                     </div>
@@ -93,6 +96,7 @@ const Register = () => {
                                                             className="form-control"
                                                             placeholder="Confirm Password"
                                                             name="confirmPassword"
+                                                            value={user.confirmPassword}
                                                             onChange={onInputChange}
                                                         />
                                                     </div>

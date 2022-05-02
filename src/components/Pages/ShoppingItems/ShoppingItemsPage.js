@@ -1,4 +1,42 @@
+import {useState} from "react";
+import axios from "axios";
+
 const ShoppingItemsPage = () => {
+
+    const [item, setItem] = useState({
+        name: "",
+        price: "",
+        quantity: "",
+        description: ""
+    });
+
+    const [items, setItems] = useState([]);
+
+    const onInputChange = event => {
+        setItem({
+            ...item,
+            [event.target.name]: event.target.value
+        });
+    };
+
+    const submitHandler = event => {
+        event.preventDefault();
+
+        axios.post('http://127.0.0.1:3000/items', item)
+            .then(function (response) {
+                console.log(response);
+                setItem({
+                    name: "",
+                    price: "",
+                    quantity: "",
+                    description: ""
+                });
+            })
+            .catch(function (error) {
+                alert(error.message);
+            });
+    }
+
     return (
         <div className="container">
             <h1 className="mx-5 my-3">Shopping Items</h1>
@@ -43,25 +81,57 @@ const ShoppingItemsPage = () => {
                             </button>
                         </div>
                         <div className="modal-body">
-                            <form>
+                            <form onSubmit={submitHandler}>
                                 <div className="form-group">
                                     <label htmlFor="name">Item Name</label>
-                                    <input type="text" className="form-control" id="name" name="name"
-                                           aria-describedby="emailHelp" placeholder="Enter Item Name"/>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        id="name"
+                                        name="name"
+                                        value={item.name}
+                                        onChange={onInputChange}
+                                        placeholder="Enter Item Name"/>
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="quantity">Quantity</label>
-                                    <input type="number" className="form-control" id="quantity"
-                                           placeholder="Quantity" name="quantity" />
+                                    <input
+                                        type="number"
+                                        className="form-control"
+                                        id="quantity"
+                                        placeholder="Quantity"
+                                        name="quantity"
+                                        value={item.quantity}
+                                        onChange={onInputChange}
+                                    />
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="price">Price</label>
+                                    <input
+                                        type="number"
+                                        className="form-control"
+                                        id="price"
+                                        placeholder="Price"
+                                        name="price"
+                                        value={item.price}
+                                        onChange={onInputChange}
+                                    />
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="description">Description</label>
-                                    <textarea type="number" className="form-control" id="description"
-                                           placeholder="Description" name="description" ></textarea>
+                                    <textarea
+                                        type="number"
+                                        className="form-control"
+                                        id="description"
+                                        placeholder="Description"
+                                        name="description"
+                                        value={item.description}
+                                        onChange={onInputChange}
+                                    ></textarea>
                                 </div>
                                 <div className="modal-footer">
                                     <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="submit" className="btn btn-primary">Add Item</button>
+                                    <button type="submit" className="btn btn-primary" data-dismiss="modal">Add Item</button>
                                 </div>
                             </form>
                         </div>
