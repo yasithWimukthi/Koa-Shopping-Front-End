@@ -1,20 +1,27 @@
-import Navigation from "../../shared/Navigation/Navigation";
 import ShoppingList from "./ShoppingList";
-import Cart from "../Cart/Cart";
-import ShoppingItemsPage from "../ShoppingItems/ShoppingItemsPage";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
-import WishList from "../WishList/WishList";
-import Promotion from "../Promotion/Promotion";
+import {useEffect, useState} from "react";
 
 const Home = () => {
+
+    const [items, setItems] = useState([]);
+
+    useEffect(() => fetchShoppingItems(), []);
+
+    /**
+     * Fetch shopping items from the backend
+     * @returns {Promise<void>}
+     */
+    const fetchShoppingItems = () => {
+        fetch('http://localhost:3000/items/get-all')
+            .then(response => response.json())
+            .then(data => setItems([ ...data]));
+
+        console.log(items);
+    }
+
     return (
         <div>
-            <ShoppingList/>
+            <ShoppingList items={items}/>
         </div>
     );
 };
