@@ -31397,7 +31397,8 @@ const Cart = ()=>{
         // fetchCartItems();
         _axiosDefault.default.get('http://localhost:3000/items/get-cart').then((response)=>{
             console.log(response.data);
-            const sum = cartItems.reduce((acc, item)=>acc + (item.promotionPrice ? item.promotionPrice : item.price)
+            setCartItems(response.data);
+            const sum = cartItems.reduce((acc, item)=>item.promotionPrice !== 0 ? acc + item.promotionPrice : acc + item.price
             , 0);
             setTotal(sum);
         }).catch((error)=>{
@@ -31411,7 +31412,7 @@ const Cart = ()=>{
                 children: "Cart"
             }, void 0, false, {
                 fileName: "src/components/Pages/Cart/Cart.js",
-                lineNumber: 25,
+                lineNumber: 26,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -31437,35 +31438,28 @@ const Cart = ()=>{
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/Pages/Cart/Cart.js",
-                                                lineNumber: 31,
-                                                columnNumber: 65
+                                                lineNumber: 33,
+                                                columnNumber: 64
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Pages/Cart/Cart.js",
-                                        lineNumber: 31,
+                                        lineNumber: 32,
                                         columnNumber: 33
                                     }, undefined),
-                                    cartItems.length == 0 ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                                        className: "cart_title",
-                                        children: "Cart is empty"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Pages/Cart/Cart.js",
-                                        lineNumber: 35,
-                                        columnNumber: 41
-                                    }, undefined) : cartItems.map((cartItem)=>{
+                                    cartItems && cartItems.length > 0 && cartItems.map((cartItem)=>{
                                         return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                                             children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_cartItemDefault.default, {
                                                 cartItem: cartItem
                                             }, void 0, false, {
                                                 fileName: "src/components/Pages/Cart/Cart.js",
                                                 lineNumber: 40,
-                                                columnNumber: 53
+                                                columnNumber: 49
                                             }, undefined)
                                         }, cartItem.id, false, {
                                             fileName: "src/components/Pages/Cart/Cart.js",
                                             lineNumber: 39,
-                                            columnNumber: 49
+                                            columnNumber: 45
                                         }, undefined);
                                     }),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -31522,33 +31516,33 @@ const Cart = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Pages/Cart/Cart.js",
-                                lineNumber: 30,
+                                lineNumber: 31,
                                 columnNumber: 29
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Pages/Cart/Cart.js",
-                            lineNumber: 29,
+                            lineNumber: 30,
                             columnNumber: 25
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Pages/Cart/Cart.js",
-                        lineNumber: 28,
+                        lineNumber: 29,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Pages/Cart/Cart.js",
-                    lineNumber: 27,
+                    lineNumber: 28,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Pages/Cart/Cart.js",
-                lineNumber: 26,
+                lineNumber: 27,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Pages/Cart/Cart.js",
-        lineNumber: 24,
+        lineNumber: 25,
         columnNumber: 9
     }, undefined);
 };
@@ -31665,11 +31659,11 @@ const CartItem = ({ cartItem  })=>{
                             columnNumber: 25
                         }, undefined),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                            className: "cart_item_total cart_info_col",
+                            className: "cart_item_price cart_info_col",
                             children: [
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                                     className: "cart_item_title",
-                                    children: "Total"
+                                    children: "Promotion Price"
                                 }, void 0, false, {
                                     fileName: "src/components/Pages/Cart/CartItem.js",
                                     lineNumber: 21,
@@ -31677,11 +31671,8 @@ const CartItem = ({ cartItem  })=>{
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                                     className: "cart_item_text",
-                                    children: [
-                                        "$ ",
-                                        cartItem.promotionPrice ? +cartItem.quantity * +cartItem.promotionPrice : +cartItem.quantity * +cartItem.quantity
-                                    ]
-                                }, void 0, true, {
+                                    children: cartItem.promotionPrice !== 0 ? `$ ${cartItem.promotionPrice}` : 'Unavailable'
+                                }, void 0, false, {
                                     fileName: "src/components/Pages/Cart/CartItem.js",
                                     lineNumber: 22,
                                     columnNumber: 29
@@ -31690,6 +31681,34 @@ const CartItem = ({ cartItem  })=>{
                         }, void 0, true, {
                             fileName: "src/components/Pages/Cart/CartItem.js",
                             lineNumber: 20,
+                            columnNumber: 25
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                            className: "cart_item_total cart_info_col",
+                            children: [
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                    className: "cart_item_title",
+                                    children: "Total"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/Cart/CartItem.js",
+                                    lineNumber: 25,
+                                    columnNumber: 29
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                                    className: "cart_item_text",
+                                    children: [
+                                        "$ ",
+                                        cartItem.promotionPrice !== 0 ? cartItem.quantity * cartItem.promotionPrice : cartItem.quantity * cartItem.price
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Pages/Cart/CartItem.js",
+                                    lineNumber: 26,
+                                    columnNumber: 29
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Pages/Cart/CartItem.js",
+                            lineNumber: 24,
                             columnNumber: 25
                         }, undefined)
                     ]
@@ -32546,7 +32565,37 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
 const PromotionPage = ()=>{
+    _s();
+    const [items, setItems] = _react.useState([]);
+    const [promotion, setPromotion] = _react.useState({
+        id: '',
+        promotion: 0
+    });
+    _react.useEffect(()=>fetchShoppingItems()
+    , []);
+    /**
+     * Fetch shopping items from the backend
+     * @returns {Promise<void>}
+     */ const fetchShoppingItems = ()=>{
+        fetch('http://localhost:3000/items/get-all').then((response)=>response.json()
+        ).then((data)=>setItems([
+                ...data
+            ])
+        );
+    };
+    const handlePromotionChange = (event)=>{
+        setPromotion({
+            ...promotion,
+            [event.target.name]: event.target.value
+        });
+    };
+    const handlePromotionSubmit = (event)=>{
+        event.preventDefault();
+        console.log(promotion);
+    };
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
         className: "container",
         children: [
@@ -32555,28 +32604,28 @@ const PromotionPage = ()=>{
                 children: "Promotions"
             }, void 0, false, {
                 fileName: "src/components/Pages/Promotion/Promotion.js",
-                lineNumber: 5,
-                columnNumber: 11
+                lineNumber: 36,
+                columnNumber: 13
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                 className: "row",
                 children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
                     className: "btn btn-primary my-3 ",
                     style: {
-                        width: '100px'
+                        width: '200px'
                     },
                     "data-toggle": "modal",
                     "data-target": "#exampleModal",
                     children: "Add Promotion"
                 }, void 0, false, {
                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                    lineNumber: 7,
-                    columnNumber: 15
+                    lineNumber: 38,
+                    columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Pages/Promotion/Promotion.js",
-                lineNumber: 6,
-                columnNumber: 11
+                lineNumber: 37,
+                columnNumber: 13
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("table", {
                 className: "table table-hover",
@@ -32589,35 +32638,35 @@ const PromotionPage = ()=>{
                                     children: "#"
                                 }, void 0, false, {
                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                    lineNumber: 12,
-                                    columnNumber: 19
+                                    lineNumber: 45,
+                                    columnNumber: 21
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
                                     scope: "col",
                                     children: "Product Name"
                                 }, void 0, false, {
                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                    lineNumber: 13,
-                                    columnNumber: 19
+                                    lineNumber: 46,
+                                    columnNumber: 21
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
                                     scope: "col",
                                     children: "Promotion"
                                 }, void 0, false, {
                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                    lineNumber: 14,
-                                    columnNumber: 19
+                                    lineNumber: 47,
+                                    columnNumber: 21
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Pages/Promotion/Promotion.js",
-                            lineNumber: 11,
-                            columnNumber: 15
+                            lineNumber: 44,
+                            columnNumber: 17
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Pages/Promotion/Promotion.js",
-                        lineNumber: 10,
-                        columnNumber: 15
+                        lineNumber: 43,
+                        columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tbody", {
                         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tr", {
@@ -32627,39 +32676,39 @@ const PromotionPage = ()=>{
                                     children: "1"
                                 }, void 0, false, {
                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                    lineNumber: 19,
-                                    columnNumber: 19
+                                    lineNumber: 52,
+                                    columnNumber: 21
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
                                     children: "Mark"
                                 }, void 0, false, {
                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                    lineNumber: 20,
-                                    columnNumber: 19
+                                    lineNumber: 53,
+                                    columnNumber: 21
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
                                     children: "Otto"
                                 }, void 0, false, {
                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                    lineNumber: 21,
-                                    columnNumber: 19
+                                    lineNumber: 54,
+                                    columnNumber: 21
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Pages/Promotion/Promotion.js",
-                            lineNumber: 18,
-                            columnNumber: 15
+                            lineNumber: 51,
+                            columnNumber: 17
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Pages/Promotion/Promotion.js",
-                        lineNumber: 17,
-                        columnNumber: 15
+                        lineNumber: 50,
+                        columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Pages/Promotion/Promotion.js",
-                lineNumber: 9,
-                columnNumber: 11
+                lineNumber: 42,
+                columnNumber: 13
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                 className: "modal fade",
@@ -32683,8 +32732,8 @@ const PromotionPage = ()=>{
                                         children: "Add Promotion"
                                     }, void 0, false, {
                                         fileName: "src/components/Pages/Promotion/Promotion.js",
-                                        lineNumber: 33,
-                                        columnNumber: 27
+                                        lineNumber: 66,
+                                        columnNumber: 29
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
                                         type: "button",
@@ -32696,23 +32745,24 @@ const PromotionPage = ()=>{
                                             children: "\xd7"
                                         }, void 0, false, {
                                             fileName: "src/components/Pages/Promotion/Promotion.js",
-                                            lineNumber: 35,
-                                            columnNumber: 31
+                                            lineNumber: 68,
+                                            columnNumber: 33
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Pages/Promotion/Promotion.js",
-                                        lineNumber: 34,
-                                        columnNumber: 27
+                                        lineNumber: 67,
+                                        columnNumber: 29
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Pages/Promotion/Promotion.js",
-                                lineNumber: 32,
-                                columnNumber: 23
+                                lineNumber: 65,
+                                columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                                 className: "modal-body",
                                 children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("form", {
+                                    onSubmit: handlePromotionSubmit,
                                     children: [
                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                                             className: "form-group",
@@ -32722,26 +32772,33 @@ const PromotionPage = ()=>{
                                                     children: "Item Name"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                                    lineNumber: 41,
-                                                    columnNumber: 35
+                                                    lineNumber: 74,
+                                                    columnNumber: 37
                                                 }, undefined),
-                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
-                                                    type: "text",
+                                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("select", {
                                                     className: "form-control",
                                                     id: "name",
-                                                    name: "name",
-                                                    "aria-describedby": "emailHelp",
-                                                    placeholder: "Enter Item Name"
+                                                    name: "id",
+                                                    onChange: handlePromotionChange,
+                                                    children: items.map((item)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
+                                                            value: item.id,
+                                                            children: item.name
+                                                        }, item.id, false, {
+                                                            fileName: "src/components/Pages/Promotion/Promotion.js",
+                                                            lineNumber: 76,
+                                                            columnNumber: 60
+                                                        }, undefined)
+                                                    )
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                                    lineNumber: 42,
-                                                    columnNumber: 35
+                                                    lineNumber: 75,
+                                                    columnNumber: 37
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Pages/Promotion/Promotion.js",
-                                            lineNumber: 40,
-                                            columnNumber: 31
+                                            lineNumber: 73,
+                                            columnNumber: 33
                                         }, undefined),
                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                                             className: "form-group",
@@ -32751,25 +32808,26 @@ const PromotionPage = ()=>{
                                                     children: "Promotion"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                                    lineNumber: 46,
-                                                    columnNumber: 35
+                                                    lineNumber: 80,
+                                                    columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
                                                     type: "number",
                                                     className: "form-control",
                                                     id: "promotion",
                                                     placeholder: "Promotion",
-                                                    name: "promotion"
+                                                    name: "promotion",
+                                                    onChange: handlePromotionChange
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                                    lineNumber: 47,
-                                                    columnNumber: 35
+                                                    lineNumber: 81,
+                                                    columnNumber: 37
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Pages/Promotion/Promotion.js",
-                                            lineNumber: 45,
-                                            columnNumber: 31
+                                            lineNumber: 79,
+                                            columnNumber: 33
                                         }, undefined),
                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                                             className: "modal-footer",
@@ -32781,8 +32839,8 @@ const PromotionPage = ()=>{
                                                     children: "Close"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                                    lineNumber: 51,
-                                                    columnNumber: 35
+                                                    lineNumber: 85,
+                                                    columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
                                                     type: "submit",
@@ -32790,49 +32848,50 @@ const PromotionPage = ()=>{
                                                     children: "Add Item"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                                    lineNumber: 52,
-                                                    columnNumber: 35
+                                                    lineNumber: 87,
+                                                    columnNumber: 37
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Pages/Promotion/Promotion.js",
-                                            lineNumber: 50,
-                                            columnNumber: 31
+                                            lineNumber: 84,
+                                            columnNumber: 33
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                    lineNumber: 39,
-                                    columnNumber: 27
+                                    lineNumber: 72,
+                                    columnNumber: 29
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Pages/Promotion/Promotion.js",
-                                lineNumber: 38,
-                                columnNumber: 23
+                                lineNumber: 71,
+                                columnNumber: 25
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Pages/Promotion/Promotion.js",
-                        lineNumber: 31,
-                        columnNumber: 19
+                        lineNumber: 64,
+                        columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                    lineNumber: 30,
-                    columnNumber: 15
+                    lineNumber: 63,
+                    columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Pages/Promotion/Promotion.js",
-                lineNumber: 28,
-                columnNumber: 11
+                lineNumber: 61,
+                columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Pages/Promotion/Promotion.js",
-        lineNumber: 4,
-        columnNumber: 7
+        lineNumber: 35,
+        columnNumber: 9
     }, undefined);
 };
+_s(PromotionPage, "oQ1npvEI50z8VjlG08aoubhJwPQ=");
 _c = PromotionPage;
 exports.default = PromotionPage;
 var _c;
@@ -32843,6 +32902,6 @@ $RefreshReg$(_c, "PromotionPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["kn9T2","aPJuQ","bB7Pu"], "bB7Pu", "parcelRequire2cd4")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["kn9T2","aPJuQ","bB7Pu"], "bB7Pu", "parcelRequire2cd4")
 
 //# sourceMappingURL=index.3d214d75.js.map
