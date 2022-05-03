@@ -3,6 +3,7 @@ import axios from "axios";
 const ShoppingItem = ({item}) => {
 
     const addToCart = selectedItem => {
+        selectedItem = {...selectedItem,quantity: 1};
         console.log(selectedItem);
         axios.post('http://localhost:3000/cart/', selectedItem)
             .then(function (response) {
