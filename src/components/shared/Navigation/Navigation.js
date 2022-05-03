@@ -13,22 +13,22 @@ const Navigation = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                        <a><Link to="/">Home</Link></a>
+                        <Link to="/" className="mx-2" style={{textDecoration:'none',color:'#000'}}>Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/wishlist">Wishlist</Link>
+                        <Link to="/wishlist" className="mx-2" style={{textDecoration:'none',color:'#000'}}>Wishlist</Link>
                     </li>
                     <li className="nav-item active">
-                        <a><Link to="/cart">Cart</Link></a>
+                        <a><Link to="/cart" className="mx-2" style={{textDecoration:'none',color:'#000'}}>Cart</Link></a>
                     </li>
                     <li className="nav-item active">
-                        <a><Link to="/shopping-items">Items</Link></a>
+                        <a><Link to="/shopping-items" className="mx-2" style={{textDecoration:'none',color:'#000'}}>Items</Link></a>
                     </li>
                     <li className="nav-item active">
-                        <a><Link to="/promotion">Promotions</Link></a>
+                        <a><Link to="/promotion" className="mx-2" style={{textDecoration:'none',color:'#000'}}>Promotions</Link></a>
                     </li>
                     <li className="nav-item active">
-                        <a><Link to="/customers">Customers</Link></a>
+                        <a><Link to="/customers" className="mx-2" style={{textDecoration:'none',color:'#000'}}>Customers</Link></a>
                     </li>
                 </ul>
             </div>
