@@ -16,7 +16,7 @@ const Cart = () => {
                 setTotal(sum);
             })
             .catch(error => {
-                console.log("error:"+error);
+                console.log("error:" + error);
             });
     }, []);
 
@@ -28,19 +28,18 @@ const Cart = () => {
                     <div className="row">
                         <div className="col-lg-10 offset-lg-1">
                             <div className="cart_container">
-                                <div className="cart_title">Cart<small> {`${cartItems.length} item in your cart`} </small></div>
+                                <div
+                                    className="cart_title">Cart<small> {`${cartItems.length} item in your cart`} </small>
+                                </div>
 
                                 {
-                                    cartItems.length == 0 ?
-                                        <div className="cart_title">Cart is empty</div>
-                                        :
-                                            cartItems.map(cartItem => {
-                                            return(
-                                                <div key={cartItem.id}>
-                                                    <CartItem  cartItem={cartItem}/>
-                                                </div>
-                                            )
-                                        })
+                                    cartItems && cartItems.length>0 && cartItems.map(cartItem => {
+                                        return (
+                                            <div key={cartItem.id}>
+                                                <CartItem cartItem={cartItem}/>
+                                            </div>
+                                        )
+                                    })
                                 }
 
 
@@ -60,7 +59,7 @@ const Cart = () => {
                 </div>
             </div>
         </div>
-);
+    );
 }
 
 export default Cart;
