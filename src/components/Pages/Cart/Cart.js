@@ -12,7 +12,8 @@ const Cart = () => {
         axios.get('http://localhost:3000/items/get-cart')
             .then(response => {
                 console.log(response.data);
-                const sum = cartItems.reduce((acc, item) => acc + (item.promotionPrice ? item.promotionPrice : item.price), 0);
+                setCartItems(response.data);
+                const sum = cartItems.reduce((acc, item) => item.promotionPrice !== 0 ? acc + item.promotionPrice : acc + item.price, 0);
                 setTotal(sum);
             })
             .catch(error => {
