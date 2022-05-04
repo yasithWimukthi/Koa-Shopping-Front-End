@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const ShoppingItem = ({item}) => {
+const ShoppingItem = ({item,wishlist}) => {
 
     const addToCart = selectedItem => {
         selectedItem = {...selectedItem,quantity: 1};
@@ -9,6 +9,21 @@ const ShoppingItem = ({item}) => {
             .then(function (response) {
                 console.log('success', response.data);
                 alert('Item added to cart');
+
+            })
+            .catch(function (error) {
+                alert(error.message);
+                console.log('error', error);
+            });
+    }
+
+    const addToWishlist = selectedItem => {
+        selectedItem = {...selectedItem,quantity: 1};
+        console.log(selectedItem);
+        axios.post('http://localhost:3000/wishlist/', selectedItem)
+            .then(function (response) {
+                console.log('success', response.data);
+                alert('Item added to wishlist');
             })
             .catch(function (error) {
                 alert(error.message);
@@ -26,7 +41,9 @@ const ShoppingItem = ({item}) => {
                         className="float-start badge rounded-pill bg-success">${item.promotionPrice > 0 ? item.promotionPrice :  item.price}</span>
                     </div>
                     <h5 className="card-title" style={{height:'100px'}}>{item.description}</h5>
-                    <div className="d-grid gap-2 my-4"><a href="#" className="btn btn-warning">Add to Wish List</a></div>
+                    {
+                        wishlist === true ? <div className="d-grid gap-2 my-4"><a href="#" className="btn btn-warning" onClick={() => addToWishlist(item)}>Add to Wish List</a></div> : null
+                    }
                     <div className="d-grid gap-2 my-4"><button className="btn btn-warning" onClick={() =>addToCart(item) }>Add to Cart</button></div>
                 </div>
             </div>
