@@ -7,6 +7,7 @@ import WishList from "./src/components/Pages/WishList/WishList";
 import Cart from "./src/components/Pages/Cart/Cart";
 import ShoppingItemsPage from "./src/components/Pages/ShoppingItems/ShoppingItemsPage";
 import Promotion from "./src/components/Pages/Promotion/Promotion";
+import CustomersPage from "./src/components/Pages/Customers/Customers";
 
 
 function App  () {
@@ -21,6 +22,7 @@ function App  () {
                     <Route exact path="/cart" element={<Cart />} />
                     <Route exact path="/shopping-items" element={<ShoppingItemsPage />} />
                     <Route exact path="/promotion" element={<Promotion />} />
+                    <Route exact path="/customers" element={<CustomersPage />} />
                 </Routes>
         </Router>
     </div>

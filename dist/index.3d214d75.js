@@ -25097,13 +25097,15 @@ var _shoppingItemsPage = require("./src/components/Pages/ShoppingItems/ShoppingI
 var _shoppingItemsPageDefault = parcelHelpers.interopDefault(_shoppingItemsPage);
 var _promotion = require("./src/components/Pages/Promotion/Promotion");
 var _promotionDefault = parcelHelpers.interopDefault(_promotion);
+var _customers = require("./src/components/Pages/Customers/Customers");
+var _customersDefault = parcelHelpers.interopDefault(_customers);
 function App() {
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.BrowserRouter, {
             children: [
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_navigationDefault.default, {}, void 0, false, {
                     fileName: "app.js",
-                    lineNumber: 16,
+                    lineNumber: 17,
                     columnNumber: 13
                 }, this),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Routes, {
@@ -25113,7 +25115,7 @@ function App() {
                             element: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_registerDefault.default, {}, void 0, false, void 0, void 0)
                         }, void 0, false, {
                             fileName: "app.js",
-                            lineNumber: 18,
+                            lineNumber: 19,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
@@ -25122,7 +25124,7 @@ function App() {
                             element: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_homeDefault.default, {}, void 0, false, void 0, void 0)
                         }, void 0, false, {
                             fileName: "app.js",
-                            lineNumber: 19,
+                            lineNumber: 20,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
@@ -25131,7 +25133,7 @@ function App() {
                             element: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_wishListDefault.default, {}, void 0, false, void 0, void 0)
                         }, void 0, false, {
                             fileName: "app.js",
-                            lineNumber: 20,
+                            lineNumber: 21,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
@@ -25140,7 +25142,7 @@ function App() {
                             element: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_cartDefault.default, {}, void 0, false, void 0, void 0)
                         }, void 0, false, {
                             fileName: "app.js",
-                            lineNumber: 21,
+                            lineNumber: 22,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
@@ -25149,7 +25151,7 @@ function App() {
                             element: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemsPageDefault.default, {}, void 0, false, void 0, void 0)
                         }, void 0, false, {
                             fileName: "app.js",
-                            lineNumber: 22,
+                            lineNumber: 23,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
@@ -25158,24 +25160,33 @@ function App() {
                             element: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_promotionDefault.default, {}, void 0, false, void 0, void 0)
                         }, void 0, false, {
                             fileName: "app.js",
-                            lineNumber: 23,
+                            lineNumber: 24,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
+                            exact: true,
+                            path: "/customers",
+                            element: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_customersDefault.default, {}, void 0, false, void 0, void 0)
+                        }, void 0, false, {
+                            fileName: "app.js",
+                            lineNumber: 25,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "app.js",
-                    lineNumber: 17,
+                    lineNumber: 18,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "app.js",
-            lineNumber: 15,
+            lineNumber: 16,
             columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "app.js",
-        lineNumber: 14,
+        lineNumber: 15,
         columnNumber: 5
     }, this);
 }
@@ -25189,7 +25200,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./src/components/Register/Register":"w91Xh","./src/components/Pages/Home Page/Home":"7fnRJ","react-router-dom":"fdOAw","./src/components/shared/Navigation/Navigation":"gNthl","./src/components/Pages/WishList/WishList":"1ATPE","./src/components/Pages/Cart/Cart":"baRrL","./src/components/Pages/ShoppingItems/ShoppingItemsPage":"6qrZq","./src/components/Pages/Promotion/Promotion":"gHQBz","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"w91Xh":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./src/components/Register/Register":"w91Xh","./src/components/Pages/Home Page/Home":"7fnRJ","react-router-dom":"fdOAw","./src/components/shared/Navigation/Navigation":"gNthl","./src/components/Pages/WishList/WishList":"1ATPE","./src/components/Pages/Cart/Cart":"baRrL","./src/components/Pages/ShoppingItems/ShoppingItemsPage":"6qrZq","./src/components/Pages/Promotion/Promotion":"gHQBz","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./src/components/Pages/Customers/Customers":"6YhY1"}],"w91Xh":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$a6f2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -32902,6 +32913,143 @@ $RefreshReg$(_c, "PromotionPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["kn9T2","aPJuQ","bB7Pu"], "bB7Pu", "parcelRequire2cd4")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6YhY1":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7554 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7554.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _s = $RefreshSig$();
+const CustomersPage = ()=>{
+    _s();
+    const [customers, setCustomers] = _react.useState([]);
+    _react.useEffect(()=>{
+        _axiosDefault.default.get("http://localhost:3000/register/customers/get-all").then((res)=>{
+            setCustomers(res.data);
+            console.log(res.data);
+        }).catch((err)=>{
+            console.log(err);
+        });
+    }, []);
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+        className: "container",
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h1", {
+                className: "mx-5 my-3",
+                children: "Customers"
+            }, void 0, false, {
+                fileName: "src/components/Pages/Customers/Customers.js",
+                lineNumber: 20,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("table", {
+                className: "table table-hover",
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("thead", {
+                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tr", {
+                            children: [
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
+                                    scope: "col",
+                                    children: "#"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/Customers/Customers.js",
+                                    lineNumber: 24,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
+                                    scope: "col",
+                                    children: "Cutomer Name Name"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/Customers/Customers.js",
+                                    lineNumber: 25,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
+                                    scope: "col",
+                                    children: "Email"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/Customers/Customers.js",
+                                    lineNumber: 26,
+                                    columnNumber: 21
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Pages/Customers/Customers.js",
+                            lineNumber: 23,
+                            columnNumber: 17
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Pages/Customers/Customers.js",
+                        lineNumber: 22,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tbody", {
+                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tr", {
+                            children: [
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
+                                    scope: "row",
+                                    children: "1"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/Customers/Customers.js",
+                                    lineNumber: 31,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
+                                    children: "Mark"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/Customers/Customers.js",
+                                    lineNumber: 32,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
+                                    children: "Otto"
+                                }, void 0, false, {
+                                    fileName: "src/components/Pages/Customers/Customers.js",
+                                    lineNumber: 33,
+                                    columnNumber: 21
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Pages/Customers/Customers.js",
+                            lineNumber: 30,
+                            columnNumber: 17
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Pages/Customers/Customers.js",
+                        lineNumber: 29,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Pages/Customers/Customers.js",
+                lineNumber: 21,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Pages/Customers/Customers.js",
+        lineNumber: 19,
+        columnNumber: 9
+    }, undefined);
+};
+_s(CustomersPage, "h68b3hq6gv818inqQQjo1WvNv/E=");
+_c = CustomersPage;
+exports.default = CustomersPage;
+var _c;
+$RefreshReg$(_c, "CustomersPage");
+
+  $parcel$ReactRefreshHelpers$7554.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","axios":"jo6P5"}]},["kn9T2","aPJuQ","bB7Pu"], "bB7Pu", "parcelRequire2cd4")
 
 //# sourceMappingURL=index.3d214d75.js.map
