@@ -1,13 +1,12 @@
 import ShoppingItem from "./ShoppingItem";
 
-const ShoppingList = ({items}) => {
+const ShoppingList = ({items,wishlist}) => {
     return (
         <div className="container">
-            <h2 className="my-5">Shopping Items</h2>
             <div className="row">
                 {
                     items && items.length>0 && items.map(item => (
-                        <ShoppingItem key={item.id} item={item}/>
+                        <ShoppingItem key={item.id} item={item} wishlist={wishlist}/>
                     ))
                 }
             </div>

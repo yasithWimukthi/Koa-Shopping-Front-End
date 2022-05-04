@@ -30881,14 +30881,26 @@ const Home = ()=>{
         console.log(items);
     };
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingListDefault.default, {
-            items: items
-        }, void 0, false, {
-            fileName: "src/components/Pages/Home Page/Home.js",
-            lineNumber: 24,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
+        className: "container",
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
+                className: "my-5",
+                children: "Shopping Items"
+            }, void 0, false, {
+                fileName: "src/components/Pages/Home Page/Home.js",
+                lineNumber: 24,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingListDefault.default, {
+                items: items,
+                wishlist: false
+            }, void 0, false, {
+                fileName: "src/components/Pages/Home Page/Home.js",
+                lineNumber: 25,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/Pages/Home Page/Home.js",
         lineNumber: 23,
         columnNumber: 9
@@ -30917,35 +30929,26 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _shoppingItem = require("./ShoppingItem");
 var _shoppingItemDefault = parcelHelpers.interopDefault(_shoppingItem);
-const ShoppingList = ({ items  })=>{
+const ShoppingList = ({ items , wishlist  })=>{
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
         className: "container",
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
-                className: "my-5",
-                children: "Shopping Items"
-            }, void 0, false, {
-                fileName: "src/components/Pages/Home Page/ShoppingList.js",
-                lineNumber: 6,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                className: "row",
-                children: items && items.length > 0 && items.map((item)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemDefault.default, {
-                        item: item
-                    }, item.id, false, {
-                        fileName: "src/components/Pages/Home Page/ShoppingList.js",
-                        lineNumber: 10,
-                        columnNumber: 25
-                    }, undefined)
-                )
-            }, void 0, false, {
-                fileName: "src/components/Pages/Home Page/ShoppingList.js",
-                lineNumber: 7,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
+        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+            className: "row",
+            children: items && items.length > 0 && items.map((item)=>/*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemDefault.default, {
+                    item: item,
+                    wishlist: wishlist
+                }, item.id, false, {
+                    fileName: "src/components/Pages/Home Page/ShoppingList.js",
+                    lineNumber: 9,
+                    columnNumber: 25
+                }, undefined)
+            )
+        }, void 0, false, {
+            fileName: "src/components/Pages/Home Page/ShoppingList.js",
+            lineNumber: 6,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/components/Pages/Home Page/ShoppingList.js",
         lineNumber: 5,
         columnNumber: 9
@@ -30973,7 +30976,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-const ShoppingItem = ({ item  })=>{
+const ShoppingItem = ({ item , wishlist  })=>{
     const addToCart = (selectedItem)=>{
         selectedItem = {
             ...selectedItem,
@@ -30983,6 +30986,20 @@ const ShoppingItem = ({ item  })=>{
         _axiosDefault.default.post('http://localhost:3000/cart/', selectedItem).then(function(response) {
             console.log('success', response.data);
             alert('Item added to cart');
+        }).catch(function(error) {
+            alert(error.message);
+            console.log('error', error);
+        });
+    };
+    const addToWishlist = (selectedItem)=>{
+        selectedItem = {
+            ...selectedItem,
+            quantity: 1
+        };
+        console.log(selectedItem);
+        _axiosDefault.default.post('http://localhost:3000/wishlist/', selectedItem).then(function(response) {
+            console.log('success', response.data);
+            alert('Item added to wishlist');
         }).catch(function(error) {
             alert(error.message);
             console.log('error', error);
@@ -31000,7 +31017,7 @@ const ShoppingItem = ({ item  })=>{
                         children: item.name
                     }, void 0, false, {
                         fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-                        lineNumber: 24,
+                        lineNumber: 39,
                         columnNumber: 21
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -31013,12 +31030,12 @@ const ShoppingItem = ({ item  })=>{
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-                            lineNumber: 25,
+                            lineNumber: 40,
                             columnNumber: 52
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-                        lineNumber: 25,
+                        lineNumber: 40,
                         columnNumber: 21
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h5", {
@@ -31029,25 +31046,27 @@ const ShoppingItem = ({ item  })=>{
                         children: item.description
                     }, void 0, false, {
                         fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-                        lineNumber: 28,
+                        lineNumber: 43,
                         columnNumber: 21
                     }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    wishlist === true ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                         className: "d-grid gap-2 my-4",
                         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
                             href: "#",
                             className: "btn btn-warning",
+                            onClick: ()=>addToWishlist(item)
+                            ,
                             children: "Add to Wish List"
                         }, void 0, false, {
                             fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-                            lineNumber: 29,
-                            columnNumber: 56
+                            lineNumber: 45,
+                            columnNumber: 80
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-                        lineNumber: 29,
-                        columnNumber: 21
-                    }, undefined),
+                        lineNumber: 45,
+                        columnNumber: 45
+                    }, undefined) : null,
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                         className: "d-grid gap-2 my-4",
                         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -31057,28 +31076,28 @@ const ShoppingItem = ({ item  })=>{
                             children: "Add to Cart"
                         }, void 0, false, {
                             fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-                            lineNumber: 30,
+                            lineNumber: 47,
                             columnNumber: 56
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-                        lineNumber: 30,
+                        lineNumber: 47,
                         columnNumber: 21
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-                lineNumber: 23,
+                lineNumber: 38,
                 columnNumber: 17
             }, undefined)
         }, void 0, false, {
             fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-            lineNumber: 22,
+            lineNumber: 37,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Pages/Home Page/ShoppingItem.js",
-        lineNumber: 21,
+        lineNumber: 36,
         columnNumber: 9
     }, undefined);
 };
@@ -31326,7 +31345,22 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _shoppingItem = require("../Home Page/ShoppingItem");
 var _shoppingItemDefault = parcelHelpers.interopDefault(_shoppingItem);
+var _react = require("react");
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _shoppingList = require("../Home Page/ShoppingList");
+var _shoppingListDefault = parcelHelpers.interopDefault(_shoppingList);
+var _s = $RefreshSig$();
 const WishList = ()=>{
+    _s();
+    const [wishList, setWishList] = _react.useState([]);
+    _react.useEffect(()=>{
+        _axiosDefault.default.get("http://localhost:3000/wishlist/get-all").then((response)=>{
+            setWishList(response.data);
+        }).catch((error)=>{
+            console.log(error);
+        });
+    }, []);
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
         className: "container",
         children: [
@@ -31335,45 +31369,32 @@ const WishList = ()=>{
                 children: "WishList"
             }, void 0, false, {
                 fileName: "src/components/Pages/WishList/WishList.js",
-                lineNumber: 6,
+                lineNumber: 23,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                 className: "row",
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemDefault.default, {}, void 0, false, {
-                        fileName: "src/components/Pages/WishList/WishList.js",
-                        lineNumber: 8,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemDefault.default, {}, void 0, false, {
-                        fileName: "src/components/Pages/WishList/WishList.js",
-                        lineNumber: 9,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemDefault.default, {}, void 0, false, {
-                        fileName: "src/components/Pages/WishList/WishList.js",
-                        lineNumber: 10,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingItemDefault.default, {}, void 0, false, {
-                        fileName: "src/components/Pages/WishList/WishList.js",
-                        lineNumber: 11,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
+                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_shoppingListDefault.default, {
+                    items: wishList,
+                    wishlist: true
+                }, void 0, false, {
+                    fileName: "src/components/Pages/WishList/WishList.js",
+                    lineNumber: 25,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
                 fileName: "src/components/Pages/WishList/WishList.js",
-                lineNumber: 7,
+                lineNumber: 24,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Pages/WishList/WishList.js",
-        lineNumber: 5,
+        lineNumber: 22,
         columnNumber: 9
     }, undefined);
 };
+_s(WishList, "E6Q6M2rOmRkRIfXJ1Lg3XY2yUIc=");
 _c = WishList;
 exports.default = WishList;
 var _c;
@@ -31384,7 +31405,7 @@ $RefreshReg$(_c, "WishList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../Home Page/ShoppingItem":"4XzBq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"baRrL":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../Home Page/ShoppingItem":"4XzBq","react":"21dqq","axios":"jo6P5","../Home Page/ShoppingList":"dDzjB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"baRrL":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$5f3d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -31769,7 +31790,7 @@ var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _helper = require("../../../helper");
 var _s = $RefreshSig$();
-const ShoppingItemsPage = ()=>{
+const ShoppingItemsPage = ({})=>{
     _s();
     const [item, setItem] = _react.useState({
         name: "",
@@ -32935,7 +32956,9 @@ var _s = $RefreshSig$();
 const CustomersPage = ()=>{
     _s();
     const [customers, setCustomers] = _react.useState([]);
-    _react.useEffect(()=>{
+    /**
+     * Fetch all customers from the API
+     */ _react.useEffect(()=>{
         _axiosDefault.default.get("http://localhost:3000/register/get/customers").then((res)=>{
             setCustomers(res.data);
             console.log(res.data);
@@ -32951,7 +32974,7 @@ const CustomersPage = ()=>{
                 children: "Customers"
             }, void 0, false, {
                 fileName: "src/components/Pages/Customers/Customers.js",
-                lineNumber: 20,
+                lineNumber: 23,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("table", {
@@ -32965,7 +32988,7 @@ const CustomersPage = ()=>{
                                     children: "#"
                                 }, void 0, false, {
                                     fileName: "src/components/Pages/Customers/Customers.js",
-                                    lineNumber: 24,
+                                    lineNumber: 27,
                                     columnNumber: 21
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
@@ -32973,7 +32996,7 @@ const CustomersPage = ()=>{
                                     children: "Cutomer Name Name"
                                 }, void 0, false, {
                                     fileName: "src/components/Pages/Customers/Customers.js",
-                                    lineNumber: 25,
+                                    lineNumber: 28,
                                     columnNumber: 21
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
@@ -32981,18 +33004,18 @@ const CustomersPage = ()=>{
                                     children: "Email"
                                 }, void 0, false, {
                                     fileName: "src/components/Pages/Customers/Customers.js",
-                                    lineNumber: 26,
+                                    lineNumber: 29,
                                     columnNumber: 21
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Pages/Customers/Customers.js",
-                            lineNumber: 23,
+                            lineNumber: 26,
                             columnNumber: 17
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Pages/Customers/Customers.js",
-                        lineNumber: 22,
+                        lineNumber: 25,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tbody", {
@@ -33004,7 +33027,7 @@ const CustomersPage = ()=>{
                                         children: index
                                     }, void 0, false, {
                                         fileName: "src/components/Pages/Customers/Customers.js",
-                                        lineNumber: 35,
+                                        lineNumber: 38,
                                         columnNumber: 37
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
@@ -33012,7 +33035,7 @@ const CustomersPage = ()=>{
                                         children: customer.name
                                     }, void 0, false, {
                                         fileName: "src/components/Pages/Customers/Customers.js",
-                                        lineNumber: 36,
+                                        lineNumber: 39,
                                         columnNumber: 37
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
@@ -33020,31 +33043,31 @@ const CustomersPage = ()=>{
                                         children: customer.email
                                     }, void 0, false, {
                                         fileName: "src/components/Pages/Customers/Customers.js",
-                                        lineNumber: 37,
+                                        lineNumber: 40,
                                         columnNumber: 37
                                     }, undefined)
                                 ]
                             }, customer.id, true, {
                                 fileName: "src/components/Pages/Customers/Customers.js",
-                                lineNumber: 34,
+                                lineNumber: 37,
                                 columnNumber: 33
                             }, undefined) : null;
                         })
                     }, void 0, false, {
                         fileName: "src/components/Pages/Customers/Customers.js",
-                        lineNumber: 29,
+                        lineNumber: 32,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Pages/Customers/Customers.js",
-                lineNumber: 21,
+                lineNumber: 24,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Pages/Customers/Customers.js",
-        lineNumber: 19,
+        lineNumber: 22,
         columnNumber: 9
     }, undefined);
 };

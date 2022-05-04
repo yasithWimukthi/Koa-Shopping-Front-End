@@ -20,8 +20,9 @@ const Home = () => {
     }
 
     return (
-        <div>
-            <ShoppingList items={items}/>
+        <div className="container">
+            <h2 className="my-5">Shopping Items</h2>
+            <ShoppingList items={items} wishlist={false}/>
         </div>
     );
 };

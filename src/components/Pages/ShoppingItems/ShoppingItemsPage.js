@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import {postData} from "../../../helper";
 
-const ShoppingItemsPage = () => {
+const ShoppingItemsPage = ({}) => {
 
     const [item, setItem] = useState({
         name: "",

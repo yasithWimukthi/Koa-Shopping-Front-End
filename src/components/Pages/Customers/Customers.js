@@ -5,6 +5,9 @@ const CustomersPage = () => {
 
     const [customers, setCustomers] = useState([]);
 
+    /**
+     * Fetch all customers from the API
+     */
     useEffect(() => {
         axios.get("http://localhost:3000/register/get/customers")
             .then(res => {
