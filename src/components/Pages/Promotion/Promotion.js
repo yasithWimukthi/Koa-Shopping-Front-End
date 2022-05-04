@@ -48,11 +48,20 @@ const PromotionPage = () => {
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                </tr>
+                {
+                     items && items.length && items.map((item, index) => {
+                         return (
+                             item.promotionPrice !== 0 ? (
+                                 <tr key={index}>
+                                     <th scope="row">{index }</th>
+                                     <td>{item.name}</td>
+                                     <td>$ {item.promotionPrice}</td>
+                                 </tr>
+                             ) : null
+                         )
+                    })
+                }
+
                 </tbody>
             </table>
 

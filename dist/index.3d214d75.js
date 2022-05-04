@@ -25200,7 +25200,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./src/components/Register/Register":"w91Xh","./src/components/Pages/Home Page/Home":"7fnRJ","react-router-dom":"fdOAw","./src/components/shared/Navigation/Navigation":"gNthl","./src/components/Pages/WishList/WishList":"1ATPE","./src/components/Pages/Cart/Cart":"baRrL","./src/components/Pages/ShoppingItems/ShoppingItemsPage":"6qrZq","./src/components/Pages/Promotion/Promotion":"gHQBz","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./src/components/Pages/Customers/Customers":"6YhY1"}],"w91Xh":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./src/components/Register/Register":"w91Xh","./src/components/Pages/Home Page/Home":"7fnRJ","react-router-dom":"fdOAw","./src/components/shared/Navigation/Navigation":"gNthl","./src/components/Pages/WishList/WishList":"1ATPE","./src/components/Pages/Cart/Cart":"baRrL","./src/components/Pages/ShoppingItems/ShoppingItemsPage":"6qrZq","./src/components/Pages/Promotion/Promotion":"gHQBz","./src/components/Pages/Customers/Customers":"6YhY1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"w91Xh":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$a6f2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -32680,36 +32680,41 @@ const PromotionPage = ()=>{
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tbody", {
-                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tr", {
-                            children: [
-                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
-                                    scope: "row",
-                                    children: "1"
-                                }, void 0, false, {
-                                    fileName: "src/components/Pages/Promotion/Promotion.js",
-                                    lineNumber: 52,
-                                    columnNumber: 21
-                                }, undefined),
-                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
-                                    children: "Mark"
-                                }, void 0, false, {
-                                    fileName: "src/components/Pages/Promotion/Promotion.js",
-                                    lineNumber: 53,
-                                    columnNumber: 21
-                                }, undefined),
-                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
-                                    children: "Otto"
-                                }, void 0, false, {
-                                    fileName: "src/components/Pages/Promotion/Promotion.js",
-                                    lineNumber: 54,
-                                    columnNumber: 21
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/Pages/Promotion/Promotion.js",
-                            lineNumber: 51,
-                            columnNumber: 17
-                        }, undefined)
+                        children: items && items.length && items.map((item, index)=>{
+                            return item.promotionPrice !== 0 ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tr", {
+                                children: [
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
+                                        scope: "row",
+                                        children: index
+                                    }, void 0, false, {
+                                        fileName: "src/components/Pages/Promotion/Promotion.js",
+                                        lineNumber: 56,
+                                        columnNumber: 38
+                                    }, undefined),
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
+                                        children: item.name
+                                    }, void 0, false, {
+                                        fileName: "src/components/Pages/Promotion/Promotion.js",
+                                        lineNumber: 57,
+                                        columnNumber: 38
+                                    }, undefined),
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
+                                        children: [
+                                            "$ ",
+                                            item.promotionPrice
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Pages/Promotion/Promotion.js",
+                                        lineNumber: 58,
+                                        columnNumber: 38
+                                    }, undefined)
+                                ]
+                            }, index, true, {
+                                fileName: "src/components/Pages/Promotion/Promotion.js",
+                                lineNumber: 55,
+                                columnNumber: 34
+                            }, undefined) : null;
+                        })
                     }, void 0, false, {
                         fileName: "src/components/Pages/Promotion/Promotion.js",
                         lineNumber: 50,
@@ -32743,7 +32748,7 @@ const PromotionPage = ()=>{
                                         children: "Add Promotion"
                                     }, void 0, false, {
                                         fileName: "src/components/Pages/Promotion/Promotion.js",
-                                        lineNumber: 66,
+                                        lineNumber: 75,
                                         columnNumber: 29
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -32756,18 +32761,18 @@ const PromotionPage = ()=>{
                                             children: "\xd7"
                                         }, void 0, false, {
                                             fileName: "src/components/Pages/Promotion/Promotion.js",
-                                            lineNumber: 68,
+                                            lineNumber: 77,
                                             columnNumber: 33
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Pages/Promotion/Promotion.js",
-                                        lineNumber: 67,
+                                        lineNumber: 76,
                                         columnNumber: 29
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Pages/Promotion/Promotion.js",
-                                lineNumber: 65,
+                                lineNumber: 74,
                                 columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -32783,7 +32788,7 @@ const PromotionPage = ()=>{
                                                     children: "Item Name"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                                    lineNumber: 74,
+                                                    lineNumber: 83,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("select", {
@@ -32796,19 +32801,19 @@ const PromotionPage = ()=>{
                                                             children: item.name
                                                         }, item.id, false, {
                                                             fileName: "src/components/Pages/Promotion/Promotion.js",
-                                                            lineNumber: 76,
+                                                            lineNumber: 85,
                                                             columnNumber: 60
                                                         }, undefined)
                                                     )
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                                    lineNumber: 75,
+                                                    lineNumber: 84,
                                                     columnNumber: 37
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Pages/Promotion/Promotion.js",
-                                            lineNumber: 73,
+                                            lineNumber: 82,
                                             columnNumber: 33
                                         }, undefined),
                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -32819,7 +32824,7 @@ const PromotionPage = ()=>{
                                                     children: "Promotion"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                                    lineNumber: 80,
+                                                    lineNumber: 89,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
@@ -32831,13 +32836,13 @@ const PromotionPage = ()=>{
                                                     onChange: handlePromotionChange
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                                    lineNumber: 81,
+                                                    lineNumber: 90,
                                                     columnNumber: 37
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Pages/Promotion/Promotion.js",
-                                            lineNumber: 79,
+                                            lineNumber: 88,
                                             columnNumber: 33
                                         }, undefined),
                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -32850,7 +32855,7 @@ const PromotionPage = ()=>{
                                                     children: "Close"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                                    lineNumber: 85,
+                                                    lineNumber: 94,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -32859,40 +32864,40 @@ const PromotionPage = ()=>{
                                                     children: "Add Item"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                                    lineNumber: 87,
+                                                    lineNumber: 96,
                                                     columnNumber: 37
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Pages/Promotion/Promotion.js",
-                                            lineNumber: 84,
+                                            lineNumber: 93,
                                             columnNumber: 33
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                                    lineNumber: 72,
+                                    lineNumber: 81,
                                     columnNumber: 29
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Pages/Promotion/Promotion.js",
-                                lineNumber: 71,
+                                lineNumber: 80,
                                 columnNumber: 25
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Pages/Promotion/Promotion.js",
-                        lineNumber: 64,
+                        lineNumber: 73,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Pages/Promotion/Promotion.js",
-                    lineNumber: 63,
+                    lineNumber: 72,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Pages/Promotion/Promotion.js",
-                lineNumber: 61,
+                lineNumber: 70,
                 columnNumber: 13
             }, undefined)
         ]
@@ -32931,7 +32936,7 @@ const CustomersPage = ()=>{
     _s();
     const [customers, setCustomers] = _react.useState([]);
     _react.useEffect(()=>{
-        _axiosDefault.default.get("http://localhost:3000/register/customers/get-all").then((res)=>{
+        _axiosDefault.default.get("http://localhost:3000/register/get/customers").then((res)=>{
             setCustomers(res.data);
             console.log(res.data);
         }).catch((err)=>{
@@ -32991,36 +32996,40 @@ const CustomersPage = ()=>{
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tbody", {
-                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tr", {
-                            children: [
-                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
-                                    scope: "row",
-                                    children: "1"
-                                }, void 0, false, {
-                                    fileName: "src/components/Pages/Customers/Customers.js",
-                                    lineNumber: 31,
-                                    columnNumber: 21
-                                }, undefined),
-                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
-                                    children: "Mark"
-                                }, void 0, false, {
-                                    fileName: "src/components/Pages/Customers/Customers.js",
-                                    lineNumber: 32,
-                                    columnNumber: 21
-                                }, undefined),
-                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
-                                    children: "Otto"
-                                }, void 0, false, {
-                                    fileName: "src/components/Pages/Customers/Customers.js",
-                                    lineNumber: 33,
-                                    columnNumber: 21
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/Pages/Customers/Customers.js",
-                            lineNumber: 30,
-                            columnNumber: 17
-                        }, undefined)
+                        children: customers.map((customer, index)=>{
+                            return customer.type === 'customer' ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV("tr", {
+                                children: [
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
+                                        scope: "col",
+                                        children: index
+                                    }, void 0, false, {
+                                        fileName: "src/components/Pages/Customers/Customers.js",
+                                        lineNumber: 35,
+                                        columnNumber: 37
+                                    }, undefined),
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
+                                        scope: "col",
+                                        children: customer.name
+                                    }, void 0, false, {
+                                        fileName: "src/components/Pages/Customers/Customers.js",
+                                        lineNumber: 36,
+                                        columnNumber: 37
+                                    }, undefined),
+                                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("th", {
+                                        scope: "col",
+                                        children: customer.email
+                                    }, void 0, false, {
+                                        fileName: "src/components/Pages/Customers/Customers.js",
+                                        lineNumber: 37,
+                                        columnNumber: 37
+                                    }, undefined)
+                                ]
+                            }, customer.id, true, {
+                                fileName: "src/components/Pages/Customers/Customers.js",
+                                lineNumber: 34,
+                                columnNumber: 33
+                            }, undefined) : null;
+                        })
                     }, void 0, false, {
                         fileName: "src/components/Pages/Customers/Customers.js",
                         lineNumber: 29,
@@ -33050,6 +33059,6 @@ $RefreshReg$(_c, "CustomersPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","axios":"jo6P5"}]},["kn9T2","aPJuQ","bB7Pu"], "bB7Pu", "parcelRequire2cd4")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["kn9T2","aPJuQ","bB7Pu"], "bB7Pu", "parcelRequire2cd4")
 
 //# sourceMappingURL=index.3d214d75.js.map
