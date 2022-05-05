@@ -7,13 +7,14 @@ import Cart from "./src/components/Pages/Cart/Cart";
 import ShoppingItemsPage from "./src/components/Pages/ShoppingItems/ShoppingItemsPage";
 import Promotion from "./src/components/Pages/Promotion/Promotion";
 import CustomersPage from "./src/components/Pages/Customers/Customers";
+import Navigation from "./src/components/shared/Navigation/Navigation";
 
 
 function App  () {
     return (
     <div>
-        <Register />
         <Router>
+            <Navigation/>
                 <Routes>
                     <Route path="/" element={<Register />} />
                     <Route exact path="/home" element={<Home />} />

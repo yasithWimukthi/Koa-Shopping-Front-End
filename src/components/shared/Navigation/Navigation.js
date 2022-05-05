@@ -14,7 +14,7 @@ const Navigation = ({currentUser}) => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                        <Link to="/" className="mx-2" style={{textDecoration: 'none', color: '#000'}}>Home</Link>
+                        <Link to="/home" className="mx-2" style={{textDecoration: 'none', color: '#000'}}>Home</Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/wishlist" className="mx-2"
@@ -26,7 +26,7 @@ const Navigation = ({currentUser}) => {
                     {
                         currentUser && currentUser.type === 'trader' ?
                             (
-                                <div>
+                                <>
                                     <li className="nav-item active">
                                         <a><Link to="/shopping-items" className="mx-2"
                                                  style={{textDecoration: 'none', color: '#000'}}>Items</Link></a>
@@ -39,7 +39,7 @@ const Navigation = ({currentUser}) => {
                                         <a><Link to="/customers" className="mx-2"
                                                  style={{textDecoration: 'none', color: '#000'}}>Customers</Link></a>
                                     </li>
-                                </div>
+                                </>
                             ) : null
                     }
                 </ul>

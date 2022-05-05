@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import {setCurrentUser} from "../../redux/user/user.actions";
 import {connect} from "react-redux";
 const Register = ({register}) => {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
     const [user, setUser] = useState({
         name: '',
         email: '',
@@ -30,7 +30,7 @@ const Register = ({register}) => {
             .then(function (response) {
                 console.log(response);
                 register(user)
-                // navigate("/home", { replace: true });
+                navigate("/home", { replace: true });
             })
             .catch(function (error) {
                 alert(error.message);
