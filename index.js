@@ -1,5 +1,5 @@
 import react from 'react';
-import {createRoot, render} from 'react-dom';
+import { render} from 'react-dom';
 import App from "./app";
 
 render(
@@ -7,6 +7,6 @@ render(
   document.getElementById('root')
 );
 
-createRoot(document.getElementById('root')).render(
-  <App />
-);
+// createRoot(document.getElementById('root')).render(
+//   <App />
+// );
