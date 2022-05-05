@@ -1,7 +1,9 @@
 import {useState} from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-const Register = () => {
+import {setCurrentUser} from "../../redux/user/user.actions";
+import {connect} from "react-redux";
+const Register = ({register}) => {
     const navigate = useNavigate();
     const [user, setUser] = useState({
         name: '',
@@ -27,6 +29,7 @@ const Register = () => {
         axios.post('http://127.0.0.1:3000/register', user)
             .then(function (response) {
                 console.log(response);
+                register(user)
                 navigate("/home", { replace: true });
             })
             .catch(function (error) {
@@ -157,4 +160,9 @@ const Register = () => {
     )
 }
 
-export default Register;
+const mapDispatchToProps = dispatch => ({
+    register: userCredentials => dispatch(setCurrentUser(userCredentials))
+})
+
+
+export default connect(null, mapDispatchToProps) (Register);

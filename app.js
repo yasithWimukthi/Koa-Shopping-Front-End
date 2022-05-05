@@ -2,12 +2,12 @@ import react from 'react';
 import Register from "./src/components/Register/Register";
 import Home from "./src/components/Pages/Home Page/Home";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import Navigation from "./src/components/shared/Navigation/Navigation";
 import WishList from "./src/components/Pages/WishList/WishList";
 import Cart from "./src/components/Pages/Cart/Cart";
 import ShoppingItemsPage from "./src/components/Pages/ShoppingItems/ShoppingItemsPage";
 import Promotion from "./src/components/Pages/Promotion/Promotion";
 import CustomersPage from "./src/components/Pages/Customers/Customers";
+import Navigation from "./src/components/shared/Navigation/Navigation";
 
 
 function App  () {

@@ -42,7 +42,7 @@ const ShoppingItem = ({item,wishlist}) => {
                     </div>
                     <h5 className="card-title" style={{height:'100px'}}>{item.description}</h5>
                     {
-                        wishlist === true ? <div className="d-grid gap-2 my-4"><a href="#" className="btn btn-warning" onClick={() => addToWishlist(item)}>Add to Wish List</a></div> : null
+                        wishlist === true ? null : <div className="d-grid gap-2 my-4"><a href="#" className="btn btn-warning" onClick={() => addToWishlist(item)}>Add to Wish List</a></div>
                     }
                     <div className="d-grid gap-2 my-4"><button className="btn btn-warning" onClick={() =>addToCart(item) }>Add to Cart</button></div>
                 </div>
