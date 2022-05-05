@@ -1,5 +1,6 @@
 import ShoppingList from "./ShoppingList";
 import {useEffect, useState} from "react";
+import Navigation from "../../shared/Navigation/Navigation";
 
 const Home = () => {
 
