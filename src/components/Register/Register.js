@@ -3,6 +3,8 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import {setCurrentUser} from "../../redux/user/user.actions";
 import {connect} from "react-redux";
+
+
 const Register = ({register}) => {
     const navigate = useNavigate();
     const [user, setUser] = useState({
