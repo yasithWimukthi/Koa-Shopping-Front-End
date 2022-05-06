@@ -1,8 +1,9 @@
 import CartItem from "./CartItem";
 import {useEffect, useState} from "react";
 import axios from "axios";
+import {connect} from "react-redux";
 
-const Cart = () => {
+const Cart = ({currentUser}) => {
 
     const [cartItems, setCartItems] = useState([]);
     const [total, setTotal] = useState(0);
@@ -13,13 +14,30 @@ const Cart = () => {
             .then(response => {
                 console.log(response.data);
                 setCartItems(response.data);
-                const sum = cartItems.reduce((acc, item) => item.promotionPrice !== 0 ? acc + item.promotionPrice : acc + item.price, 0);
-                setTotal(sum);
+                const sum = cartItems.reduce((acc, item) => item.promotionPrice !== 0 ? (acc + item.promotionPrice) : (acc + item.price), 0);
+                setTotal(response.data.reduce((acc, item) => item.promotionPrice !== 0 ? (acc + item.promotionPrice) : (acc + item.price), 0));
             })
             .catch(error => {
                 console.log("error:" + error);
             });
     }, []);
+
+    const handlePayment = () => {
+        axios.post('http://localhost:3000/payment',{
+            cartItems,
+            total,
+            name:currentUser.name
+        })
+            .then(response => {
+                console.log(response.data);
+                setCartItems([]);
+                setTotal(0);
+                alert("Payment Successful");
+            })
+            .catch(error => {
+                console.log("error:" + error);
+            })
+    }
 
     return (
         <div className="container">
@@ -51,7 +69,7 @@ const Cart = () => {
                                     </div>
                                 </div>
                                 <div className="cart_buttons">
-                                    <button type="button" className="btn btn-warning">Pay Now
+                                    <button type="button" className="btn btn-warning" onClick={handlePayment}>Pay Now
                                     </button>
                                 </div>
                             </div>
@@ -63,4 +81,9 @@ const Cart = () => {
     );
 }
 
-export default Cart;
+const mapStateToProps = state => ({
+    currentUser: state.user.currentUser,
+})
+
+
+export default connect(mapStateToProps) (Cart);

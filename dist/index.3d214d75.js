@@ -25282,7 +25282,7 @@ const Register = ({ register  })=>{
                                                 children: "Register"
                                             }, void 0, false, {
                                                 fileName: "src/components/Register/Register.js",
-                                                lineNumber: 49,
+                                                lineNumber: 51,
                                                 columnNumber: 45
                                             }, undefined),
                                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("form", {
@@ -25303,17 +25303,17 @@ const Register = ({ register  })=>{
                                                                 onChange: onInputChange
                                                             }, void 0, false, {
                                                                 fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 55,
+                                                                lineNumber: 57,
                                                                 columnNumber: 57
                                                             }, undefined)
                                                         }, void 0, false, {
                                                             fileName: "src/components/Register/Register.js",
-                                                            lineNumber: 54,
+                                                            lineNumber: 56,
                                                             columnNumber: 53
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/components/Register/Register.js",
-                                                        lineNumber: 53,
+                                                        lineNumber: 55,
                                                         columnNumber: 49
                                                     }, undefined),
                                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -25330,17 +25330,17 @@ const Register = ({ register  })=>{
                                                                 onChange: onInputChange
                                                             }, void 0, false, {
                                                                 fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 69,
+                                                                lineNumber: 71,
                                                                 columnNumber: 57
                                                             }, undefined)
                                                         }, void 0, false, {
                                                             fileName: "src/components/Register/Register.js",
-                                                            lineNumber: 68,
+                                                            lineNumber: 70,
                                                             columnNumber: 53
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/components/Register/Register.js",
-                                                        lineNumber: 67,
+                                                        lineNumber: 69,
                                                         columnNumber: 49
                                                     }, undefined),
                                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -25357,17 +25357,17 @@ const Register = ({ register  })=>{
                                                                 onChange: onInputChange
                                                             }, void 0, false, {
                                                                 fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 83,
+                                                                lineNumber: 85,
                                                                 columnNumber: 57
                                                             }, undefined)
                                                         }, void 0, false, {
                                                             fileName: "src/components/Register/Register.js",
-                                                            lineNumber: 82,
+                                                            lineNumber: 84,
                                                             columnNumber: 53
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/components/Register/Register.js",
-                                                        lineNumber: 81,
+                                                        lineNumber: 83,
                                                         columnNumber: 49
                                                     }, undefined),
                                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -25384,17 +25384,17 @@ const Register = ({ register  })=>{
                                                                 onChange: onInputChange
                                                             }, void 0, false, {
                                                                 fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 97,
+                                                                lineNumber: 99,
                                                                 columnNumber: 57
                                                             }, undefined)
                                                         }, void 0, false, {
                                                             fileName: "src/components/Register/Register.js",
-                                                            lineNumber: 96,
+                                                            lineNumber: 98,
                                                             columnNumber: 53
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/components/Register/Register.js",
-                                                        lineNumber: 95,
+                                                        lineNumber: 97,
                                                         columnNumber: 49
                                                     }, undefined),
                                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -25416,7 +25416,7 @@ const Register = ({ register  })=>{
                                                                         checked: true
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/Register/Register.js",
-                                                                        lineNumber: 111,
+                                                                        lineNumber: 113,
                                                                         columnNumber: 57
                                                                     }, undefined),
                                                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
@@ -25425,13 +25425,13 @@ const Register = ({ register  })=>{
                                                                         children: "Customer"
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/Register/Register.js",
-                                                                        lineNumber: 120,
+                                                                        lineNumber: 122,
                                                                         columnNumber: 61
                                                                     }, undefined)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 110,
+                                                                lineNumber: 112,
                                                                 columnNumber: 53
                                                             }, undefined),
                                                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -25446,7 +25446,7 @@ const Register = ({ register  })=>{
                                                                         onChange: onInputChange
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/Register/Register.js",
-                                                                        lineNumber: 126,
+                                                                        lineNumber: 128,
                                                                         columnNumber: 57
                                                                     }, undefined),
                                                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
@@ -25455,19 +25455,19 @@ const Register = ({ register  })=>{
                                                                         children: "Trader"
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/Register/Register.js",
-                                                                        lineNumber: 134,
+                                                                        lineNumber: 136,
                                                                         columnNumber: 61
                                                                     }, undefined)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "src/components/Register/Register.js",
-                                                                lineNumber: 125,
+                                                                lineNumber: 127,
                                                                 columnNumber: 53
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/components/Register/Register.js",
-                                                        lineNumber: 109,
+                                                        lineNumber: 111,
                                                         columnNumber: 49
                                                     }, undefined),
                                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -25478,24 +25478,24 @@ const Register = ({ register  })=>{
                                                             children: "Sign Up"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Register/Register.js",
-                                                            lineNumber: 142,
+                                                            lineNumber: 144,
                                                             columnNumber: 53
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/components/Register/Register.js",
-                                                        lineNumber: 141,
+                                                        lineNumber: 143,
                                                         columnNumber: 49
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/Register/Register.js",
-                                                lineNumber: 51,
+                                                lineNumber: 53,
                                                 columnNumber: 45
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Register/Register.js",
-                                        lineNumber: 48,
+                                        lineNumber: 50,
                                         columnNumber: 41
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -25506,48 +25506,48 @@ const Register = ({ register  })=>{
                                             alt: "Sample image"
                                         }, void 0, false, {
                                             fileName: "src/components/Register/Register.js",
-                                            lineNumber: 149,
+                                            lineNumber: 151,
                                             columnNumber: 45
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Register/Register.js",
-                                        lineNumber: 148,
+                                        lineNumber: 150,
                                         columnNumber: 41
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Register/Register.js",
-                                lineNumber: 47,
+                                lineNumber: 49,
                                 columnNumber: 37
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Register/Register.js",
-                            lineNumber: 46,
+                            lineNumber: 48,
                             columnNumber: 33
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Register/Register.js",
-                        lineNumber: 45,
+                        lineNumber: 47,
                         columnNumber: 29
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Register/Register.js",
-                    lineNumber: 44,
+                    lineNumber: 46,
                     columnNumber: 25
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Register/Register.js",
-                lineNumber: 43,
+                lineNumber: 45,
                 columnNumber: 21
             }, undefined)
         }, void 0, false, {
             fileName: "src/components/Register/Register.js",
-            lineNumber: 42,
+            lineNumber: 44,
             columnNumber: 17
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Register/Register.js",
-        lineNumber: 41,
+        lineNumber: 43,
         columnNumber: 9
     }, undefined);
 };
@@ -32870,7 +32870,7 @@ const ShoppingItem = ({ item , wishlist  })=>{
                         lineNumber: 43,
                         columnNumber: 21
                     }, undefined),
-                    wishlist === true ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    wishlist === true ? null : /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                         className: "d-grid gap-2 my-4",
                         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
                             href: "#",
@@ -32881,13 +32881,13 @@ const ShoppingItem = ({ item , wishlist  })=>{
                         }, void 0, false, {
                             fileName: "src/components/Pages/Home Page/ShoppingItem.js",
                             lineNumber: 45,
-                            columnNumber: 80
+                            columnNumber: 87
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Pages/Home Page/ShoppingItem.js",
                         lineNumber: 45,
-                        columnNumber: 45
-                    }, undefined) : null,
+                        columnNumber: 52
+                    }, undefined),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                         className: "d-grid gap-2 my-4",
                         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -32983,72 +32983,76 @@ const Navigation = ({ currentUser  })=>{
                 children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("ul", {
                     className: "navbar-nav mr-auto",
                     children: [
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
-                            className: "nav-item active",
-                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Link, {
-                                to: "/home",
-                                className: "mx-2",
-                                style: {
-                                    textDecoration: 'none',
-                                    color: '#000'
-                                },
-                                children: "Home"
-                            }, void 0, false, {
-                                fileName: "src/components/shared/Navigation/Navigation.js",
-                                lineNumber: 17,
-                                columnNumber: 25
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/shared/Navigation/Navigation.js",
-                            lineNumber: 16,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
-                            className: "nav-item",
-                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Link, {
-                                to: "/wishlist",
-                                className: "mx-2",
-                                style: {
-                                    textDecoration: 'none',
-                                    color: '#000'
-                                },
-                                children: "Wishlist"
-                            }, void 0, false, {
-                                fileName: "src/components/shared/Navigation/Navigation.js",
-                                lineNumber: 20,
-                                columnNumber: 25
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/shared/Navigation/Navigation.js",
-                            lineNumber: 19,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
-                            className: "nav-item active",
-                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
-                                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Link, {
-                                    to: "/cart",
-                                    className: "mx-2",
-                                    style: {
-                                        textDecoration: 'none',
-                                        color: '#000'
-                                    },
-                                    children: "Cart"
+                        currentUser ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_jsxDevRuntime.Fragment, {
+                            children: [
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
+                                    className: "nav-item active",
+                                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Link, {
+                                        to: "/home",
+                                        className: "mx-2",
+                                        style: {
+                                            textDecoration: 'none',
+                                            color: '#000'
+                                        },
+                                        children: "Home"
+                                    }, void 0, false, {
+                                        fileName: "src/components/shared/Navigation/Navigation.js",
+                                        lineNumber: 21,
+                                        columnNumber: 37
+                                    }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/shared/Navigation/Navigation.js",
-                                    lineNumber: 24,
-                                    columnNumber: 28
+                                    lineNumber: 20,
+                                    columnNumber: 33
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
+                                    className: "nav-item",
+                                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Link, {
+                                        to: "/wishlist",
+                                        className: "mx-2",
+                                        style: {
+                                            textDecoration: 'none',
+                                            color: '#000'
+                                        },
+                                        children: "Wishlist"
+                                    }, void 0, false, {
+                                        fileName: "src/components/shared/Navigation/Navigation.js",
+                                        lineNumber: 24,
+                                        columnNumber: 37
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/shared/Navigation/Navigation.js",
+                                    lineNumber: 23,
+                                    columnNumber: 33
+                                }, undefined),
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
+                                    className: "nav-item active",
+                                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("a", {
+                                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Link, {
+                                            to: "/cart",
+                                            className: "mx-2",
+                                            style: {
+                                                textDecoration: 'none',
+                                                color: '#000'
+                                            },
+                                            children: "Cart"
+                                        }, void 0, false, {
+                                            fileName: "src/components/shared/Navigation/Navigation.js",
+                                            lineNumber: 28,
+                                            columnNumber: 40
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/shared/Navigation/Navigation.js",
+                                        lineNumber: 28,
+                                        columnNumber: 37
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/shared/Navigation/Navigation.js",
+                                    lineNumber: 27,
+                                    columnNumber: 33
                                 }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/shared/Navigation/Navigation.js",
-                                lineNumber: 24,
-                                columnNumber: 25
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/shared/Navigation/Navigation.js",
-                            lineNumber: 23,
-                            columnNumber: 21
-                        }, undefined),
+                            ]
+                        }, void 0, true) : null,
                         currentUser && currentUser.type === 'trader' ? /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_jsxDevRuntime.Fragment, {
                             children: [
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
@@ -33064,17 +33068,17 @@ const Navigation = ({ currentUser  })=>{
                                             children: "Items"
                                         }, void 0, false, {
                                             fileName: "src/components/shared/Navigation/Navigation.js",
-                                            lineNumber: 31,
+                                            lineNumber: 39,
                                             columnNumber: 44
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/shared/Navigation/Navigation.js",
-                                        lineNumber: 31,
+                                        lineNumber: 39,
                                         columnNumber: 41
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/shared/Navigation/Navigation.js",
-                                    lineNumber: 30,
+                                    lineNumber: 38,
                                     columnNumber: 37
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
@@ -33090,17 +33094,17 @@ const Navigation = ({ currentUser  })=>{
                                             children: "Promotions"
                                         }, void 0, false, {
                                             fileName: "src/components/shared/Navigation/Navigation.js",
-                                            lineNumber: 35,
+                                            lineNumber: 43,
                                             columnNumber: 44
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/shared/Navigation/Navigation.js",
-                                        lineNumber: 35,
+                                        lineNumber: 43,
                                         columnNumber: 41
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/shared/Navigation/Navigation.js",
-                                    lineNumber: 34,
+                                    lineNumber: 42,
                                     columnNumber: 37
                                 }, undefined),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
@@ -33116,17 +33120,17 @@ const Navigation = ({ currentUser  })=>{
                                             children: "Customers"
                                         }, void 0, false, {
                                             fileName: "src/components/shared/Navigation/Navigation.js",
-                                            lineNumber: 39,
+                                            lineNumber: 47,
                                             columnNumber: 44
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/shared/Navigation/Navigation.js",
-                                        lineNumber: 39,
+                                        lineNumber: 47,
                                         columnNumber: 41
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/shared/Navigation/Navigation.js",
-                                    lineNumber: 38,
+                                    lineNumber: 46,
                                     columnNumber: 37
                                 }, undefined)
                             ]
@@ -33250,8 +33254,9 @@ var _cartItemDefault = parcelHelpers.interopDefault(_cartItem);
 var _react = require("react");
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _reactRedux = require("react-redux");
 var _s = $RefreshSig$();
-const Cart = ()=>{
+const Cart = ({ currentUser  })=>{
     _s();
     const [cartItems, setCartItems] = _react.useState([]);
     const [total, setTotal] = _react.useState(0);
@@ -33262,11 +33267,26 @@ const Cart = ()=>{
             setCartItems(response.data);
             const sum = cartItems.reduce((acc, item)=>item.promotionPrice !== 0 ? acc + item.promotionPrice : acc + item.price
             , 0);
-            setTotal(sum);
+            setTotal(response.data.reduce((acc, item)=>item.promotionPrice !== 0 ? acc + item.promotionPrice : acc + item.price
+            , 0));
         }).catch((error)=>{
             console.log("error:" + error);
         });
     }, []);
+    const handlePayment = ()=>{
+        _axiosDefault.default.post('http://localhost:3000/payment', {
+            cartItems,
+            total,
+            name: currentUser.name
+        }).then((response)=>{
+            console.log(response.data);
+            setCartItems([]);
+            setTotal(0);
+            alert("Payment Successful");
+        }).catch((error)=>{
+            console.log("error:" + error);
+        });
+    };
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
         className: "container",
         children: [
@@ -33274,7 +33294,7 @@ const Cart = ()=>{
                 children: "Cart"
             }, void 0, false, {
                 fileName: "src/components/Pages/Cart/Cart.js",
-                lineNumber: 26,
+                lineNumber: 44,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -33300,13 +33320,13 @@ const Cart = ()=>{
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/Pages/Cart/Cart.js",
-                                                lineNumber: 33,
+                                                lineNumber: 51,
                                                 columnNumber: 64
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Pages/Cart/Cart.js",
-                                        lineNumber: 32,
+                                        lineNumber: 50,
                                         columnNumber: 33
                                     }, undefined),
                                     cartItems && cartItems.length > 0 && cartItems.map((cartItem)=>{
@@ -33315,12 +33335,12 @@ const Cart = ()=>{
                                                 cartItem: cartItem
                                             }, void 0, false, {
                                                 fileName: "src/components/Pages/Cart/Cart.js",
-                                                lineNumber: 40,
+                                                lineNumber: 58,
                                                 columnNumber: 49
                                             }, undefined)
                                         }, cartItem.id, false, {
                                             fileName: "src/components/Pages/Cart/Cart.js",
-                                            lineNumber: 39,
+                                            lineNumber: 57,
                                             columnNumber: 45
                                         }, undefined);
                                     }),
@@ -33334,7 +33354,7 @@ const Cart = ()=>{
                                                     children: "Order Total:"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Pages/Cart/Cart.js",
-                                                    lineNumber: 49,
+                                                    lineNumber: 67,
                                                     columnNumber: 41
                                                 }, undefined),
                                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -33345,18 +33365,18 @@ const Cart = ()=>{
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/Pages/Cart/Cart.js",
-                                                    lineNumber: 50,
+                                                    lineNumber: 68,
                                                     columnNumber: 41
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Pages/Cart/Cart.js",
-                                            lineNumber: 48,
+                                            lineNumber: 66,
                                             columnNumber: 37
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Pages/Cart/Cart.js",
-                                        lineNumber: 47,
+                                        lineNumber: 65,
                                         columnNumber: 33
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -33364,53 +33384,58 @@ const Cart = ()=>{
                                         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
                                             type: "button",
                                             className: "btn btn-warning",
+                                            onClick: handlePayment,
                                             children: "Pay Now"
                                         }, void 0, false, {
                                             fileName: "src/components/Pages/Cart/Cart.js",
-                                            lineNumber: 54,
+                                            lineNumber: 72,
                                             columnNumber: 37
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Pages/Cart/Cart.js",
-                                        lineNumber: 53,
+                                        lineNumber: 71,
                                         columnNumber: 33
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Pages/Cart/Cart.js",
-                                lineNumber: 31,
+                                lineNumber: 49,
                                 columnNumber: 29
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Pages/Cart/Cart.js",
-                            lineNumber: 30,
+                            lineNumber: 48,
                             columnNumber: 25
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Pages/Cart/Cart.js",
-                        lineNumber: 29,
+                        lineNumber: 47,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Pages/Cart/Cart.js",
-                    lineNumber: 28,
+                    lineNumber: 46,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Pages/Cart/Cart.js",
-                lineNumber: 27,
+                lineNumber: 45,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Pages/Cart/Cart.js",
-        lineNumber: 25,
+        lineNumber: 43,
         columnNumber: 9
     }, undefined);
 };
 _s(Cart, "ScTS65IMhH+WxJUXqfFKovZLirk=");
 _c = Cart;
-exports.default = Cart;
+const mapStateToProps = (state)=>({
+        currentUser: state.user.currentUser
+    })
+;
+exports.default = _reactRedux.connect(mapStateToProps)(Cart);
 var _c;
 $RefreshReg$(_c, "Cart");
 
@@ -33419,7 +33444,7 @@ $RefreshReg$(_c, "Cart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./CartItem":"dOMc6","react":"21dqq","axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dOMc6":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./CartItem":"dOMc6","react":"21dqq","axios":"jo6P5","react-redux":"bdVon","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dOMc6":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$befd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

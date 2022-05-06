@@ -13,16 +13,24 @@ const Navigation = ({currentUser}) => {
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto">
-                    <li className="nav-item active">
-                        <Link to="/home" className="mx-2" style={{textDecoration: 'none', color: '#000'}}>Home</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="/wishlist" className="mx-2"
-                              style={{textDecoration: 'none', color: '#000'}}>Wishlist</Link>
-                    </li>
-                    <li className="nav-item active">
-                        <a><Link to="/cart" className="mx-2" style={{textDecoration: 'none', color: '#000'}}>Cart</Link></a>
-                    </li>
+
+                    {
+                        currentUser ? (
+                            <>
+                                <li className="nav-item active">
+                                    <Link to="/home" className="mx-2" style={{textDecoration: 'none', color: '#000'}}>Home</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/wishlist" className="mx-2"
+                                          style={{textDecoration: 'none', color: '#000'}}>Wishlist</Link>
+                                </li>
+                                <li className="nav-item active">
+                                    <a><Link to="/cart" className="mx-2" style={{textDecoration: 'none', color: '#000'}}>Cart</Link></a>
+                                </li>
+                            </>
+                        ): null
+                    }
+
                     {
                         currentUser && currentUser.type === 'trader' ?
                             (
